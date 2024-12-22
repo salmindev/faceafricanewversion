@@ -462,7 +462,7 @@
 
 .destination .tab-class .tab-content .tab-pane .destination-img .destination-overlay {
     position: absolute;
-    bottom: -100%;
+    bottom: 0;
     left: 0;
     z-index: 3;
     transition: 0.5s;
@@ -885,7 +885,7 @@
 
 /*** Tour Booking Start ***/
 .booking {
-    background: linear-gradient(rgba(19, 53, 123, .8), rgba(19, 53, 123, .8)), url(../img/tour-booking-bg.jpg);
+    background: linear-gradient(rgba(15, 15, 15, 0.402), rgba(0, 0, 0, 0.502)), url(../images/faceofafrica.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
