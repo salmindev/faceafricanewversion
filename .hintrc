@@ -21,6 +21,7 @@
         "aria-input-field-name": "off",
         "aria-required-children": "off"
       }
-    ]
+    ],
+    "disown-opener": "off"
   }
 }

@@ -55,7 +55,7 @@ class NavbarComponent extends LitElement {
    
     .nav-link {
       
-      color:white;
+      color:black;
       margin-right: 20px;
       font-size: 16px;
     }
@@ -303,17 +303,17 @@ class NavbarComponent extends LitElement {
 
    <!-- Navbar & Hero Start -->
    <div class="container-fluid position-relative p-0">
-       <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0 fixed-top" id="ftco-navbar">
+       <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0 fixed-top" id="ftco-navbar">
            <a href="" class="navbar-brand p-0">
                <img src="images/logo.avif" style="height: 220px; background-color:white;" alt="Logo">
            </a>
            <button  class="navbar-toggler" type="button" @click="${this.toggleCollapse}" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                <span class="fa fa-bars"></span>
            </button>
-           <div class="collapse navbar-collapse" id="ftco-nav">
-               <div class="navbar-nav ms-auto py-0">
-                   <a href="index.html" class="nav-item nav-link text-dark">Safari</a>
-                   <a href="about.html" class="nav-item nav-link text-white">Kilimanjaro</a>
+           <div class="collapse navbar-collapse text-dark" id="ftco-nav">
+               <div class="navbar-nav ms-auto py-0 text-dark">
+                   <a href="index.html" class="nav-item nav-link">Safari</a>
+                   <a href="about.html" class="nav-item nav-link text-white" style="color:black;">Kilimanjaro</a>
                    <a href="services.html" class="nav-item nav-link text-white">Zanzibar</a>
                    <a href="packages.html" class="nav-item nav-link text-white">Daytrips</a>
                    <a href="blog.html" class="nav-item nav-link">Blog</a>
