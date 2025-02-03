@@ -311,8 +311,8 @@ class NavbarComponent extends LitElement {
                <span class="fa fa-bars"></span>
            </button>
            <div class="collapse navbar-collapse text-dark" id="ftco-nav">
-               <div class="navbar-nav ms-auto py-0 text-dark">
-                   <a href="index.html" class="nav-item nav-link">Safari</a>
+               <div class="navbar-nav ms-auto py-0 ">
+                   <a href="index.html" class="nav-item nav-link " style="color: black">Safari</a>
                    <a href="about.html" class="nav-item nav-link text-white" style="color:black;">Kilimanjaro</a>
                    <a href="services.html" class="nav-item nav-link text-white">Zanzibar</a>
                    <a href="packages.html" class="nav-item nav-link text-white">Daytrips</a>
