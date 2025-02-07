@@ -161,7 +161,7 @@ p{
     font-family: 'Roboto', sans-serif;
     position: relative;
     padding: 35px 15px;
-    color: var(--bs-white) !important;
+    color: black !important;
     font-size: 17px;
     font-weight: 400;
     outline: none;
@@ -170,7 +170,7 @@ p{
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
     padding: 20px 15px;
-    color: var(--bs-dark) !important;
+    color: black !important;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
@@ -368,7 +368,7 @@ p{
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.5));
+   
     background-size: cover;
 }
 

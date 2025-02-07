@@ -303,38 +303,38 @@ class NavbarComponent extends LitElement {
 
    <!-- Navbar & Hero Start -->
    <div class="container-fluid position-relative p-0 ">
-       <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0 fixed-top d-none d-md-block" id="ftco-navbar">
-           <a href="" class="navbar-brand p-0">
-               <img src="images/logo.avif" style="height: 220px; background-color:white;" alt="Logo">
-           </a>
+       <nav class="navbar navbar-expand-lg navbar-light bg-white text-dark px-4 px-lg-5 fixed-top d-none d-md-block" id="ftco-navbar">
+         
            <button  class="navbar-toggler" type="button" @click="${this.toggleCollapse}" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                <span class="fa fa-bars"></span>
            </button>
            <div class="collapse navbar-collapse text-dark" id="ftco-nav">
-               <div class="navbar-nav ms-auto py-0 ">
-                   <a href="index.html" class="nav-item nav-link " style="color: black">Safari</a>
-                   <a href="about.html" class="nav-item nav-link text-white" style="color:black;">Kilimanjaro</a>
-                   <a href="services.html" class="nav-item nav-link text-white">Zanzibar</a>
-                   <a href="packages.html" class="nav-item nav-link text-white">Daytrips</a>
-                   <a href="blog.html" class="nav-item nav-link">Blog</a>
+               <div class="navbar-nav ms-auto d-flex align-items-center">
+               <a href="" class="navbar-brand">
+               <img src="images/logo.avif" style="height: 460px; " alt="Logo">
+               </a>
+                   <a href="" class="nav-item nav-link" style="color:black;">Home</a>
+                   
                    <div class="nav-item dropdown">
-                       <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About us</a>
+                       <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Safari</a>
                        <div class="dropdown-menu m-0">
-                           <a href="destination.html" class="dropdown-item">Destination</a>
-                           <a href="tour.html" class="dropdown-item">Explore Tour</a>
-                           <a href="booking.html" class="dropdown-item">Travel Booking</a>
-                           <a href="gallery.html" class="dropdown-item">Our Gallery</a>
-                           <a href="guides.html" class="dropdown-item">Travel Guides</a>
-                           <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                           <a href="404.html" class="dropdown-item">404 Page</a>
+                           <a href="/tanzania-safari" class="dropdown-item">Tanzania</a>
+                           <a href="/kenya-safari" class="dropdown-item">Kenya</a>
+                           <a href="/uganda-safari" class="dropdown-item">Uganda</a>
+                           <a href="/south-africa-safari" class="dropdown-item">South Africa</a>
+                           <a href="/tanzania-national-park" class="dropdown-item">Tanzania National Parks</a>
                        </div>
                    </div>
-                   <a href="contact.html" class="nav-item nav-link">Contact</a>
+                   <a href="/climbing-kilimanjaro" class="nav-item nav-link text-white" style="color:black;">Kilimanjaro</a>
+                   <a href="/zanzibar-island" class="nav-item nav-link text-white">Zanzibar</a>
+                   <a href="" class="nav-item nav-link " style="color: black">Blog</a>
+                   <a href="blog.html" class="nav-item nav-link" style="color:black;">About us</a>
+                   <a href="/contact.html" class="nav-item nav-link">Contact</a>
                </div>
                <a href="" class="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Send a Request</a>
            </div>
        </nav>
-       <nav class="container py-3 d-md-none d-block navbar bg-light" style="margin-top:-35px;width:100%;">
+       <nav class="container py-3 d-md-none d-block navbar bg-light" style="margin-top:-5px;width:100%;">
              <div class="d-flex justify-content-between align-items-center  w-100">
                            <a href="<?php echo $base_url; ?>"><img src="images/logo.avif" alt="Face Of Africa adventure" title="Face Of Africa adventure" style="width:120px; height:70px;"></a>
                             <h6>info@faceafricaadventures.com<br>
