@@ -273,11 +273,11 @@ class NavbarComponent extends LitElement {
     <link href="css/style.css" rel="stylesheet">
    <!-- Topbar Start -->
    <div class="container-fluid px-5 d-none d-lg-block" style="background-color: #E8AB03;">
-       <div class="row gx-0">
+       <div class="row ">
            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
                <div class="d-inline-flex align-items-center" style="height: 45px;">
                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
-                           class="fab fa-twitter fw-normal"></i></a>
+                          class="fab fa-twitter fw-normal"></i></a>
                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
                           class="fab fa-facebook-f fw-normal"></i></a>
                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
@@ -302,8 +302,8 @@ class NavbarComponent extends LitElement {
    <!-- Topbar End -->
 
    <!-- Navbar & Hero Start -->
-   <div class="container-fluid position-relative p-0 ">
-       <nav class="navbar navbar-expand-lg navbar-light bg-white text-dark px-4 px-lg-5 fixed-top d-none d-md-block" id="ftco-navbar">
+   <div class="container-fluid  d-flex align-items-center justisfy-content-betwween">
+       <nav class="navbar navbar-expand-lg navbar-light bg-white text-dark  fixed-top d-none d-md-block" id="ftco-navbar">
          
            <button  class="navbar-toggler" type="button" @click="${this.toggleCollapse}" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                <span class="fa fa-bars"></span>
