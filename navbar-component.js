@@ -314,7 +314,17 @@ class NavbarComponent extends LitElement {
                <img src="images/logo.avif" style="height: 460px; " alt="Logo">
                </a>
                    <a href="" class="nav-item nav-link" style="color:black;">Home</a>
-                   <a href="" class="nav-item nav-link" style="color:black;">Destinations</a>
+                   <div class="nav-item dropdown">
+                       <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Destinations</a>
+                       <div class="dropdown-menu m-0">
+                           <a href="/tanzania-destinations" class="dropdown-item">Tanzania</a>
+                           <a href="/kenya-destinations" class="dropdown-item">Kenya</a>
+                           <a href="/uganda-destinations" class="dropdown-item">Uganda</a>
+                           <a href="/rwanda-destinations" class="dropdown-item">Rwanda</a>
+                           <a href="/south-africa-destinations" class="dropdown-item">South Africa</a>
+                          
+                       </div>
+                   </div>
                    <div class="nav-item dropdown">
                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Safari</a>
                        <div class="dropdown-menu m-0">
