@@ -314,7 +314,7 @@ class NavbarComponent extends LitElement {
                <img src="images/logo.avif" style="height: 460px; " alt="Logo">
                </a>
                    <a href="" class="nav-item nav-link" style="color:black;">Home</a>
-                   
+                   <a href="" class="nav-item nav-link" style="color:black;">Destinations</a>
                    <div class="nav-item dropdown">
                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Safari</a>
                        <div class="dropdown-menu m-0">
@@ -349,7 +349,7 @@ class NavbarComponent extends LitElement {
           <li class="text-dark d-flex align-items-center flex-column fw-bold"><a href="<?php echo $base_url; ?>african-safaris" class="text-dark"><i class="bi bi-geo-alt-fill d-block fs-2 text-center"></i>Safari</a></li>
           <li class="text-dark d-flex align-items-center flex-column fw-bold"><a href="<?php echo $base_url; ?>climbing-kilimanjaro" class="text-dark"><i class="bi bi-triangle-fill fs-2 d-block text-center"></i>Kilimanjaro</a></li>
           <li class="text-dark d-flex align-items-center flex-column fw-bold"><a href="https://faceafricaadventures.com/contact-form" class="text-dark"><i class="bi bi-whatsapp fs-2 d-block text-center"></i>Contact</a></li>
-          <li class="text-dark d-flex align-items-center flex-column fw-bold"><a data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-list fs-2 d-block fw-bold text-center"></i>Menu</a></li>
+         <li class="text-dark d-flex align-items-center flex-column fw-bold"><a data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-list fs-2 d-block fw-bold text-center"></i>Menu</a></li>
         </ul>
          <div class="offcanvas offcanvas-end" style="width:80%;" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
           <div class="offcanvas-header">
