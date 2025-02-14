@@ -337,9 +337,7 @@ class NavbarComponent extends LitElement {
                    </div>
                    <a href="/climbing-kilimanjaro" class="nav-item nav-link text-white" style="color:black;">Kilimanjaro</a>
                    <a href="/zanzibar-island" class="nav-item nav-link text-white">Zanzibar</a>
-                   <a href="" class="nav-item nav-link" style="color:black;">Accommodations</a>
-         
-               
+                   <a href="/accommodation" class="nav-item nav-link" style="color:black;">Accommodations</a>
                    <a href="/contact.html" class="nav-item nav-link">Contact</a>
                </div>
                <a href="" class="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Send a Request</a>
