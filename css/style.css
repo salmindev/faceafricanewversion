@@ -480,7 +480,7 @@ p{
     display: flex;
     justify-content: end;
     padding: 20px 20px 0 0;
-    background: rgba(0, 0, 0, 0.1);
+
     border-radius: 10px;
     transition: 0.5s;
 
@@ -502,17 +502,11 @@ p{
     color: var(--bs-white) !important;
 }
 
-.destination .tab-class .tab-content .destination-img:hover .search-icon {
-    background: rgba(19, 53, 123, 0.4);
-}
-
 .destination .tab-class .tab-content .destination-img:hover .destination-overlay {
     bottom: 0;
 }
 
-.destination .tab-class .tab-content .destination-img:hover .search-icon a i {
-    opacity: 1;
-}
+
 
 .destination .tab-class .tab-content .destination-img img {
     transition: 0.5s;

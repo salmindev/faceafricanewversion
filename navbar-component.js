@@ -1,7 +1,5 @@
 import { LitElement, html, css } from 'https://cdn.skypack.dev/pin/lit@v2.3.1-xx2m8Ol8q0zpWqDkqruF/mode=imports,min/optimized/lit.js';
 
-
-
 class NavbarComponent extends LitElement {
   static styles = css`
     #ftco-navbar{
@@ -49,15 +47,22 @@ class NavbarComponent extends LitElement {
     }
   }
 
-  toggleCollapse() {
-    const collapseElement = this.shadowRoot.querySelector('#offcanvasRight');
-    this.isCollapsed = !this.isCollapsed;
-    if (this.isCollapsed) {
-      collapseElement.classList.remove('show');
-    } else {
-      collapseElement.classList.add('show');
+  firstUpdated() {
+    // Initialize Bootstrap's offcanvas functionality
+    const offcanvasElement = this.shadowRoot.querySelector('#offcanvasRight');
+    this.offcanvas = new bootstrap.Offcanvas(offcanvasElement);
+
+    // Add event listeners for offcanvas toggle
+    const offcanvasToggle = this.shadowRoot.querySelector('[data-bs-toggle="offcanvas"]');
+    offcanvasToggle.addEventListener('click', () => this.toggleOffcanvas());
+  }
+
+  toggleOffcanvas() {
+    if (this.offcanvas) {
+      this.offcanvas.toggle();
     }
   }
+
 
   toggleDropdown(event) {
     const dropdown = event.currentTarget;
@@ -181,14 +186,14 @@ class NavbarComponent extends LitElement {
 </nav>
 <nav class="container-fluid hide-menu d-md-none  d-block  " style="background-color: #E8AB03; position:fixed; bottom:0px;width:100%;z-index:1000;">
 <div class="row">
-  <ul class="d-flex justify-content-between align-items-center w-100" style="list-style: none;">
-    <li class="text-white d-flex align-items-center flex-column fw-bold"><a href="<?php echo $base_url; ?>" class="text-white"><i class="fas fa-home d-block fa-2x text-center"></i>Home</a></li>
-    <li class="text-white d-flex align-items-center flex-column fw-bold"><a href="<?php echo $base_url; ?>african-safaris" class="text-white"><i class='fas fa-hippo fa-2x d-block text-center text-white'></i>Safari</a></li>
-    <li class="text-white d-flex align-items-center flex-column fw-bold"><a href="<?php echo $base_url; ?>climbing-kilimanjaro" class="text-white"><i class="fas fa-mountain fa-2x d-block text-center"></i>Kilimanjaro</a></li>
-    <li class="text-white d-flex align-items-center flex-column fw-bold"><a href="https://faceafricaadventures.com/contact-form" class="text-white"><i class="fas fa-phone-volume fa-2x d-block text-center"></i>Contact</a></li>
-    <li class="text-white d-flex align-items-center flex-column fw-bold"><a data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-stream fa-2x d-block fw-bold text-center"></i>Menu</a></li>
+  <ul class="d-flex justify-content-between align-items-center w-100 py-3" style="list-style: none;">
+    <li class="text-dark d-flex align-items-center flex-column fw-bold"><a href="<?php echo $base_url; ? >" class="text-dark fs-6"><i class="fas fa-home d-block fa-2x text-center"></i>Home</a></li>
+    <li class="text-dark d-flex align-items-center flex-column fw-bold"><a href="<?php echo $base_url; ?>african-safaris" class="text-dark fs-6"><i class='fas fa-hippo fa-2x d-block text-center text-dark'></i>Safari</a></li>
+    <li class="text-dark d-flex align-items-center flex-column fw-bold"><a href="<?php echo $base_url; ?>climbing-kilimanjaro" class="text-dark fs-6"><i class="fas fa-mountain fa-2x d-block text-center"></i>Kilimanjaro</a></li>
+    <li class="text-dark d-flex align-items-center flex-column fw-bold"><a href="https://faceafricaadventures.com/contact-form" class="text-dark fs-6"><i class="fas fa-phone-volume fa-2x d-block text-center"></i>Contact</a></li>
+    <li class="text-dark d-flex align-items-center flex-column fw-bold"><a data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-stream fa-2x d-block fw-bold text-center "></i>Menu</a></li>
   </ul>
-   <div class="offcanvas offcanvas-end" style="width:80%;" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+   <div class="offcanvas offcanvas-end" style="width:80%;" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel"
     <div class="offcanvas-header">
       <div class="logo" style="width: 120px; height: 70px; background-image: url('<?php echo $base_url; ?>images/logo.avif');background-position: center;background-repeat: no-repeat;background-size: cover;"></div>
        <div id="google_translate_element"></div>
