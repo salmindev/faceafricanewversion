@@ -193,6 +193,7 @@ class NavbarComponent extends LitElement {
     <li class="text-dark d-flex align-items-center flex-column fw-bold"><a href="https://faceafricaadventures.com/contact-form" class="text-dark fs-6"><i class="fas fa-phone-volume fa-2x d-block text-center"></i>Contact</a></li>
     <li class="text-dark d-flex align-items-center flex-column fw-bold"><a data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-stream fa-2x d-block fw-bold text-center "></i>Menu</a></li>
   </ul>
+  
    <div class="offcanvas offcanvas-end" style="width:80%;" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel"
     <div class="offcanvas-header">
       <div class="logo" style="width: 120px; height: 70px; background-image: url('<?php echo $base_url; ?>images/logo.avif');background-position: center;background-repeat: no-repeat;background-size: cover;"></div>
@@ -216,8 +217,8 @@ class NavbarComponent extends LitElement {
             <li> <a href="" class="flag_link eng dropdown-item" data-lang="ru">RU<img class="img-fluid ps-2" src="<?php echo $base_url;?>images/russian.webp" alt="russian" style="width: 20px;height: 20px;"></a></li>
           </ul>
      </div>
-     </div>-->
-    <!-- <div class="offcanvas-body w-50">
+     </div>
+    <div class="offcanvas-body w-50">
       <a href="#lang" class="text-dark py-3 fs-2 fw-bold" style="text-decoration: none;" data-bs-toggle="collapse">Language<i class="bi bi-chevron-down ms-2"></i></a>
      <div id="lang" class="collapse ps-5 ">
            <ul class="fs-3">
@@ -229,7 +230,7 @@ class NavbarComponent extends LitElement {
             <li> <a href="#" class="flag_link eng " data-lang="ru"><img class="img-fluid  py-1" src="<?php echo $base_url;?>images/russia.png" alt="russian" style="width: 21px;height: 22px;"></a></li>
           </ul>
      </div>
-     </div>-->
+     </div>
      <div class="dropdown">
           <button class="btn btn-success dropdown-toggle fw-bold" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             Language
