@@ -19,22 +19,22 @@ class NavbarComponent extends LitElement {
     faviconLink.href = 'favicon/favicon.ico'; // Replace with the actual path to your favicon
     document.head.appendChild(faviconLink);
 
-     // Add Google Analytics script
-     const script = document.createElement('script');
-     script.src = 'https://www.googletagmanager.com/gtag/js?id=G-EP6X0NYLM7';
-     script.async = true;
-     document.head.appendChild(script);
- 
-     script.onload = () => {
-       const gaScript = document.createElement('script');
-       gaScript.textContent = `
+    // Add Google Analytics script
+    const script = document.createElement('script');
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-EP6X0NYLM7';
+    script.async = true;
+    document.head.appendChild(script);
+
+    script.onload = () => {
+      const gaScript = document.createElement('script');
+      gaScript.textContent = `
          window.dataLayer = window.dataLayer || [];
          function gtag(){dataLayer.push(arguments);}
          gtag('js', new Date());
          
        `;
-       document.head.appendChild(gaScript);
-     };
+      document.head.appendChild(gaScript);
+    };
 
     this.isCollapsed = true;  // State to track the collapse state
   }
@@ -68,7 +68,7 @@ class NavbarComponent extends LitElement {
     const dropdown = event.currentTarget;
     dropdown.classList.toggle('show');
   }
-  
+
 
   render() {
     return html`
@@ -84,6 +84,7 @@ class NavbarComponent extends LitElement {
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    
 
 
     <!-- Customized Bootstrap Stylesheet -->
@@ -95,23 +96,17 @@ class NavbarComponent extends LitElement {
 
     <div class="navbar navbar-expand-lg navbar-light  text-dark  d-none d-md-block" id="ftco-navbar" style="margin-top:-10px;">
     <!-- Topbar Start -->
-    <div class="container-fluid px-5 d-none d-lg-block" style="background-color: #E8AB03;">
+    <div class="container-fluid px-5 d-none d-lg-block border border-bottom border-1 border-warning" style="background-color: white;">
         <div class="row ">
-            <div class="col-lg-4 text-center text-lg-start mb-2 mb-lg-0">
-                <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
-                            class="fab fa-twitter fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
-                            class="fab fa-facebook-f fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
-                            class="fab fa-linkedin-in fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
-                            class="fab fa-instagram fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i
-                            class="fab fa-youtube fw-normal"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-4 text-center text-lg-start mb-2 mb-lg-0">
+        <div class="col-lg-4 text-center text-lg-end d-flex justify-content-center align-items-center">
+            
+        <div class="d-inline-flex align-items-center" style="height: 45px;">
+        <a href="#"><small class="me-3 text-dark">info@faceafricaadventurs.com</small></a>
+        <a href="#"><small class="me-3 text-dark">+255 784 162 038</small></a>
+
+        </div>
+    </div>
+            <div class="col-lg-4 text-center text-lg-start mb-2 mb-lg-0 d-flex justify-content-center align-items-center">
                 <div class="d-inline-flex align-items-center" style="height: 45px;">
                 <img class="img-fluid px-2" src="images/united-states.avif" alt="american" style="width: 36px;height: 27px;">
               <img class="img-fluid px-2" src="images/france.avif" alt="france" style="width: 36px;height: 27px;">
@@ -121,14 +116,18 @@ class NavbarComponent extends LitElement {
               <img class="img-fluid px-2" src="images/russia.webp" alt="russian" style="width: 36px;height: 27px;">
                 </div>
             </div>
-            <div class="col-lg-4 text-center text-lg-end">
-            
+           
+            <div class="col-lg-4 text-center text-lg-start mb-2 mb-lg-0 d-flex justify-content-center align-items-center">
                 <div class="d-inline-flex align-items-center" style="height: 45px;">
-                <a href="#"><small class="me-3 text-light"><i
-                                class="fa fa-sign-in-alt me-2"></i>info@faceafricaadventurs.com</small></a>
-                <a href="https://api.whatsapp.com/send?phone=+255784162038" class="text-center "><button class="btn bg-success px-4  rounded-pill d-flex justify-content-center align-items-center text-white"><i class="bi bi-whatsapp text-center text-white pe-2"></i> Chat</button></a>
-                    
-
+                  
+                    <a class="btn btn-sm btn-outline-light btn-sm-square border border-1 border-dark rounded-circle me-2" href=""><i
+                            class="fab fa-facebook-f fw-normal text-dark"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2  border border-1 border-dark" href=""><i
+                            class="fab fa-linkedin-in fw-normal text-dark"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2  border border-1 border-dark" href=""><i
+                            class="fab fa-instagram fw-normal text-dark"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle  border border-1 border-dark" href=""><i
+                            class="fab fa-youtube fw-normal text-dark"></i></a>
                 </div>
             </div>
         </div>
@@ -171,6 +170,7 @@ class NavbarComponent extends LitElement {
             <a href="/" class="nav-item nav-link">Blog</a>
             <a href="/contact.html" class="nav-item nav-link">Contact</a>
             <a href="" class="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Send a Request</a>
+
         </div>
        
     </div>
