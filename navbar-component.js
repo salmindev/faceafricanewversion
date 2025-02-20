@@ -141,7 +141,7 @@ class NavbarComponent extends LitElement {
             </a>
 
             <a href="/" class="nav-item nav-link" style="color:black;">Home</a>
-            <a href="/" class="nav-item nav-link" style="color:black;">About us</a>
+            <a href="/about-us" class="nav-item nav-link" style="color:black;">About us</a>
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Destinations</a>
                 <div class="dropdown-menu m-0">
