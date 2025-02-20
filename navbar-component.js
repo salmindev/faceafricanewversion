@@ -108,25 +108,25 @@ class NavbarComponent extends LitElement {
     </div>
             <div class="col-lg-4 text-center text-lg-start mb-2 mb-lg-0 d-flex justify-content-center align-items-center">
                 <div class="d-inline-flex align-items-center" style="height: 45px;">
-                <img class="img-fluid px-2" src="images/united-states.avif" alt="american" style="width: 36px;height: 27px;">
-              <img class="img-fluid px-2" src="images/france.avif" alt="france" style="width: 36px;height: 27px;">
-               <img class="img-fluid px-2" src="images/flag.avif" alt="spain" style="width: 36px;height: 27px;">
-               <img class="img-fluid px-2" src="images/italy(1).avif" alt="italy" style="width: 36px;height: 27px;">
-              <img class="img-fluid px-2" src="images/germany.avif" alt="german" style="width: 36px;height: 27px;">
-              <img class="img-fluid px-2" src="images/russia.webp" alt="russian" style="width: 36px;height: 27px;">
+                <img class="img-fluid rounded-circle border border-1 border-dark mx-1" src="images/united-states.avif" alt="american" style="width: 27px;height: 27px;">
+              <img class="img-fluid rounded-circle border border-1 border-dark mx-1" src="images/france.avif" alt="france" style="width: 27px;height: 27px;">
+               <img class="img-fluid rounded-circle border border-1 border-dark mx-1" src="images/flag.avif" alt="spain" style="width: 27px;height: 27px;">
+               <img class="img-fluid rounded-circle border border-1 border-dark mx-1" src="images/italy(1).avif" alt="italy" style="width: 27px;height: 27px;">
+              <img class="img-fluid rounded-circle border border-1 border-dark mx-1" src="images/germany.avif" alt="german" style="width: 27px;height: 27px;">
+              <img class="img-fluid rounded-circle border border-1 border-dark mx-1" src="images/russia.webp" alt="russian" style="width: 27px;height: 27px;">
                 </div>
             </div>
            
             <div class="col-lg-4 text-center text-lg-start mb-2 mb-lg-0 d-flex justify-content-center align-items-center">
-                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                <div class="d-flex justify-content-between align-items-center " >
                   
-                    <a class="btn btn-sm btn-outline-light btn-sm-square border border-1 border-dark rounded-circle me-2" href=""><i
+                    <a class="btn btn-sm btn-outline-light btn-sm-square border border-1 border-dark rounded-circle mx-1" href=""><i
                             class="fab fa-facebook-f fw-normal text-dark"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2  border border-1 border-dark" href=""><i
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2  border border-1 border-dark mx-1" href=""><i
                             class="fab fa-linkedin-in fw-normal text-dark"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2  border border-1 border-dark" href=""><i
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2  border border-1 border-dark mx-1" href=""><i
                             class="fab fa-instagram fw-normal text-dark"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle  border border-1 border-dark" href=""><i
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle  border border-1 border-dark mx-1" href=""><i
                             class="fab fa-youtube fw-normal text-dark"></i></a>
                 </div>
             </div>
