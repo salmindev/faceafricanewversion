@@ -391,7 +391,7 @@ class FooterComponent extends LitElement {
                 <div class="col-md-6 col-lg-6 col-xl-3">
                     <div class="footer-item d-flex flex-column">
                         <h4 class="mb-4 text-white">Get In Touch</h4>
-                        <a href=""><i class="fas fa-home me-2"></i> 123 Street, New York, USA</a>
+                        <a href=""><i class="fas fa-home me-2"></i> Sakina Oil com</a>
                         <a href=""><i class="fas fa-envelope me-2"></i> info@faceafricaadventures.com</a>
                         <a href=""><i class="fas fa-phone me-2"></i> +255 784 162 038</a>
                         <a href="" class="mb-3"><i class="fas fa-print me-2"></i> +255 784 162 038</a>
