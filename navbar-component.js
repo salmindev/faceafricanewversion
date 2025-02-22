@@ -119,15 +119,15 @@ class NavbarComponent extends LitElement {
            
             <div class="col-lg-4 text-center text-lg-start mb-2 mb-lg-0 d-flex justify-content-center align-items-center">
                 <div class="d-flex justify-content-between align-items-center " >
-                  
-                    <a class="btn btn-sm btn-outline-light btn-sm-square border border-1 border-dark rounded-circle mx-1" href=""><i
-                            class="fab fa-facebook-f fw-normal text-dark"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2  border border-1 border-dark mx-1" href=""><i
-                            class="fab fa-linkedin-in fw-normal text-dark"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2  border border-1 border-dark mx-1" href=""><i
-                            class="fab fa-instagram fw-normal text-dark"></i></a>
+                 
+                    <a class="btn btn-sm btn-outline-light btn-sm-square border border-1 border-dark rounded-circle mx-1" href="" style="background-color:#4267B2;"><i
+                            class="fab fa-facebook-f fw-normal text-white"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2  border border-1 border-dark mx-1" href="" style="background-color:#0077B5;"><i
+                            class="fab fa-linkedin-in fw-normal text-white"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2  border border-1 border-dark mx-1" href="" style="background:linear-gradient(#f9ce34, #ee2a7b, #6228d7);"><i
+                            class="fab fa-instagram fw-normal text-whit"></i></a>
                     <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle  border border-1 border-dark mx-1" href=""><i
-                            class="fab fa-youtube fw-normal text-dark"></i></a>
+                            class="fab fa-youtube fw-normal text-danger"></i></a>
                 </div>
             </div>
         </div>
