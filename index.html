@@ -27,6 +27,339 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        .fas-top-service-main {
+            width: 100%;
+            float: left;
+            position: relative;
+            margin-top: 30px;
+        }
+
+        .fas-top-service-div {
+            width: 25%;
+            float: left;
+            position: relative;
+            min-height: 245px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .fas-top-service-div img {
+            width: auto;
+        }
+
+        .fas-top-service-div h3 {
+            font-size: 20px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            color: #200e0a;
+            margin-top: 10px;
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+        .fas-top-service-div p {
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: rgba(51, 51, 51, 0.54);
+            margin-top: 10px;
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+        .fas-top-service-border {
+            border-right: 1px solid #bbb;
+            border-bottom: 1px solid #bbb;
+        }
+
+        .fas-top-service-border-1 {
+            border-bottom: 1px solid #bbb;
+        }
+
+        .fas-top-service-border-2 {
+            border-right: 1px solid #bbb;
+        }
+
+        .fas-top-service-border-3 {
+            border: none !important;
+        }
+
+        .fas-reviews {
+            width: 100%;
+            float: left;
+            position: relative;
+            background-image: url(../images/bg10.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: inherit;
+        }
+
+        .fas-reviews-main {
+            width: 100%;
+            float: left;
+            position: relative;
+            z-index: 0;
+            padding: 60px 0px 40px 0px;
+        }
+
+        .fas-reviews-div {
+            width: 100%;
+            float: left;
+            position: relative;
+            margin-top: 30px;
+        }
+
+        .fas-reviews-sec {
+            width: 100%;
+            float: left;
+            position: relative;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .fas-reviews-sec-heading {
+            width: 100%;
+            float: left;
+            position: relative;
+            text-align: center;
+            border-bottom: 1px solid rgba(51, 51, 51, 0.25);
+            padding: 0 0 30px 0;
+        }
+
+        .fas-reviews-sec-heading-1 {
+            width: 20%;
+            float: left;
+        }
+
+        .fas-reviews-sec-heading-1 img {
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        .fas-reviews-sec-heading-2 {
+            width: 50%;
+            float: left;
+        }
+
+        .fas-reviews-sec-heading-2 h5 {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0;
+            color: rgba(51, 51, 51, 0.61);
+            font-family: 'Rajdhani', sans-serif;
+            margin-top: 10px;
+        }
+
+        .fas-reviews-sec-heading-3 {
+            width: 100%;
+            float: left;
+            margin-top: 10px;
+        }
+
+        .fas-reviews-sec-heading-3 ul {
+            list-style: none;
+        }
+
+        .fas-reviews-sec-heading-3 ul li {
+            display: inline-block;
+        }
+
+        .fas-reviews-sec-heading-3 ul li i {
+            color: #fd9d14;
+        }
+
+        .fas-reviews-sec-content {
+            width: 100%;
+            float: left;
+            position: relative;
+        }
+
+        .fas-reviews-sec-content p {
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: rgba(51, 51, 51, 0.62);
+
+            margin-top: 30px;
+        }
+
+        .fas-reviews-slider .owl-dots {
+            display: block !important;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .fas-selling-tour-logo {
+            width: 100%;
+            float: left;
+            position: relative;
+        }
+
+        .fas-selling-tour-logo-image {
+            width: 100%;
+            float: left;
+            text-align: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            place-content: center;
+        }
+
+        .fas-selling-tour-logo-image a {
+            display: grid;
+            width: 100%;
+            place-content: center;
+        }
+
+        .fas-selling-tour-logo-image img {
+            width: auto;
+            padding: 0px 10px;
+        }
+
+        .fas-why-us {
+            width: 100%;
+            float: left;
+            position: relative;
+            padding: 40px 0px;
+        }
+
+        .fas-why-us-main {
+            width: 100%;
+            float: left;
+            position: relative;
+        }
+
+        .fas-why-us-main-heading {
+            width: 100%;
+            float: left;
+            position: relative;
+        }
+
+        .fas-why-us-main-heading h3 {
+            font-size: 50px;
+            text-transform: uppercase;
+            font-weight: 900;
+            color: #200e0a;
+            margin: 0;
+            
+        }
+
+        .fas-why-us-main-div {
+            width: 100%;
+            float: left;
+            position: relative;
+            margin-top: 15px;
+        }
+
+        .fas-why-us-main-div-left {
+            width: 15%;
+            float: left;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            color: #6b6b6b;
+            -webkit-transition: 0.5s ease-in-out;
+            -moz-transition: 0.5s ease-in-out;
+            -ms-transition: 0.5s ease-in-out;
+            -o-transition: 0.5s ease-in-out;
+            transition: 0.5s ease-in-out;
+        }
+
+        .fas-why-us-main-div-left span {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            border: 1px solid #ccc;
+            display: inline-block;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .flaticon-happiness:before {
+            font-family: Flaticon;
+            content: "\f100";
+        }
+
+        .fas-why-us-main-div-left span:before {
+            font-size: 60px;
+            color: #3d2112;
+        }
+
+        .fas-why-us-main-div-right {
+            width: 80%;
+            float: left;
+            background-color: #f0f0f0;
+            margin-left: 10px;
+            border-radius: 5px;
+            color: #6b6b6b;
+            -webkit-transition: 0.5s ease-in-out;
+            -moz-transition: 0.5s ease-in-out;
+            -ms-transition: 0.5s ease-in-out;
+            -o-transition: 0.5s ease-in-out;
+            transition: 0.5s ease-in-out;
+        }
+
+        .fas-why-us-main-div-right h4 {
+            margin: 0;
+            padding: 30px;
+            font-size: 20px;
+            font-weight: 900;
+            text-align: center;
+           
+
+        }
+
+        .fas-why-us-main-div-left p {
+            padding: 22px;
+            font-size: 20px;
+            font-weight: 900;
+            text-align: center;
+            
+        }
+
+        .fas-why-us-main-div:hover .fas-why-us-main-div-left {
+            background-color: #f3972b;
+            color: white;
+        }
+
+        .fas-why-us-main-div:hover .fas-why-us-main-div-right {
+            background-color: #200e0a;
+            color: #fff;
+        }
+
+        .fas-why-us-main-sec {
+            width: 100%;
+            float: left;
+            position: relative;
+        }
+
+        .note-non {
+            float: left;
+            width: 100%;
+        }
+
+        .fas-why-us-main-sec-heading h3 {
+            font-size: 44px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #200e0a;
+            margin: 0;
+            padding: 10px 0px;
+          
+        }
+
+        .fas-why-us-main-sec-content {
+            width: 100%;
+            float: left;
+            position: relative;
+        }
+
+        .fas-why-us-main-sec-content p {
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: rgba(51, 51, 51, 0.62);
+           
+            margin-bottom: 6px;
+        }
+    </style>
 </head>
 
 <body>
@@ -58,6 +391,7 @@
                 <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
                 <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
                 <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="3"></li>
             </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
@@ -392,7 +726,7 @@
                             </div>
                         </div>
                     </div>
-                   <div id="tab-2" class="tab-pane fade show p-0">
+                    <div id="tab-2" class="tab-pane fade show p-0">
                         <div class="row g-4">
                             <div class="col-lg-6">
                                 <div class="destination-img">
@@ -859,7 +1193,7 @@
         <div class="container py-5">
             <div class="mx-auto text-center mb-5" style="max-width: 900px;">
                 <h5 class="section-title px-3">Packages</h5>
-                <h1 class="mb-0">Awesome Packages</h1>
+                <h1 class="mb-0">Best Safari Packages</h1>
             </div>
             <div class="packages-carousel owl-carousel">
                 <div class="packages-item">
@@ -1027,11 +1361,11 @@
         <div class="row" style="height: 400px;">
 
 
-            <div class=" col-6 col-sm-6"
+            <div class=" col-md-6 col-sm-6"
                 style="background-image: url('images/generic.avif'); background-position: center; background-size: cover;">
             </div>
 
-            <div class="fas-honeymoon-safari-sec col-6 col-sm-6">
+            <div class="fas-honeymoon-safari-sec col-md-6 col-sm-6">
                 <div class="fas-honeymoon-safari-heading">
                     <h4>Last Minute Offers</h4>
                     <h3>Tanzania Honeymoon Safari</h3>
@@ -1069,596 +1403,131 @@
     </div>
 
     <!-- Services Start -->
-    <div class="container-fluid bg-light service py-5">
-        <div class="container py-5">
-            <div class="mx-auto text-center mb-5" style="max-width: 900px;">
-                <h5 class="section-title px-3">Why Us</h5>
-                <h1 class="mb-4">Face of Africa Adventures</h1>
-                <p class="mb-0">
-                    If you are planning a trip to Tanzania or anywhere else in east Africa in the near future, you
-                    are in
-                    luck. Face of Africa Adventures will help you build theultimate safari experience.<br><br>
-                    Here at Face of Africa Adventures, we provide custom tours. Unlike most tour companies, Face of
-                    Africa
-                    Adventures does not limit you to specific dates and programs. instead, we carefully tailor each
-                    vacation
-                    to suit your individual needs.<br><br>
-                    Our guides are placed through two years of rigorous training are passionate about their jobs.
-                    They will
-                    accommodate you have the trip of a lifetime!
-                </p>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-6">
-                    <div class="row g-4">
-                        <div class="col-12">
-                            <div
-                                class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 pe-0">
-                                <div class="service-content text-end">
-                                    <h5 class="mb-4">Exerience in the field</h5>
-                                    <p class="mb-0">
-                                        We were here, we are here and we will be here, tour operations are what we do
-                                        best! Over seven year's experience we have experienced our share of ups and
-                                        downs yet we still stand passionate and stronger than before, improvement is our
-                                        motto.
-                                    </p>
-                                </div>
-                                <div class="service-icon p-4">
-                                    <i class="fa fa-globe fa-4x text-primary"></i>
-                                </div>
+    <section class="fas-why-us pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="fas-why-us-main">
+                        <div class="fas-why-us-main-heading">
+                            <h3>Why Us</h3>
+                        </div>
+                        <div class="fas-why-us-main-div">
+                            <div class="fas-why-us-main-div-left">
+                                <p>1</p>
+                            </div>
+                            <div class="fas-why-us-main-div-right">
+                                <h4>INDEPENDENT EXPERTS SINCE 2010</h4>
                             </div>
                         </div>
-                        <div class="col-12">
-                            <div
-                                class="service-content-inner d-flex align-items-center  bg-white border border-primary rounded p-4 pe-0">
-                                <div class="service-content text-end">
-                                    <h5 class="mb-4">Responsible Tourism</h5>
-                                    <p class="mb-0">
-                                        We operates according to nations and international rules of conducting tourism
-                                        Face of Africa Adventures operations ensure the safety of enviroment where
-                                        tourism is conducted.
-                                    </p>
-                                </div>
-                                <div class="service-icon p-4">
-                                    <i class="fa fa-hotel fa-4x text-primary"></i>
-                                </div>
+                        <div class="fas-why-us-main-div">
+                            <div class="fas-why-us-main-div-left">
+                                <p>2</p>
+                            </div>
+                            <div class="fas-why-us-main-div-right">
+                                <h4>24/7 ON-SAFARI SUPPORT</h4>
                             </div>
                         </div>
-                        <div class="col-12">
-                            <div
-                                class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 pe-0">
-                                <div class="service-content text-end">
-                                    <h5 class="mb-4">We Give Back</h5>
-                                    <p class="mb-0">
-                                        Face of Africa Adventures do not only receive money from you, we share our
-                                        profit ith the community we live in by helping children living in most
-                                        vulnerable conditions such as orphans.
-                                    </p>
-                                </div>
-                                <div class="service-icon p-4">
-                                    <i class="fa fa-user fa-4x text-primary"></i>
-                                </div>
+                        <div class="fas-why-us-main-div">
+                            <div class="fas-why-us-main-div-left">
+                                <p>3</p>
+                            </div>
+                            <div class="fas-why-us-main-div-right">
+                                <h4>OUR BEST PRICE PROMISE</h4>
                             </div>
                         </div>
-
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="row g-4">
-                        <div class="col-12">
-                            <div
-                                class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 ps-0">
-                                <div class="service-icon p-4">
-                                    <i class="fa fa-globe fa-4x text-primary"></i>
-                                </div>
-                                <div class="service-content">
-                                    <h5 class="mb-4">Employee Welfare</h5>
-                                    <p class="mb-0">
-                                        Unlike other companies, our patters and guides do not depend on tips. The
-                                        welfare of our employees comes first; the salaries we pay are standard from the
-                                        directed authorities.
-                                    </p>
-                                </div>
-                            </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="fas-why-us-main-sec">
+                        <div class="fas-why-us-main-sec-heading">
+                            <h3>Face Of Africa<br> Adventure</h3>
                         </div>
-                        <div class="col-12">
-                            <div
-                                class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 ps-0">
-                                <div class="service-icon p-4">
-                                    <i class="fa fa-hotel fa-4x text-primary"></i>
-                                </div>
-                                <div class="service-content">
-                                    <h5 class="mb-4">We are the Company not Brokers</h5>
-                                    <p class="mb-0">
-                                        When you come to us you have come to company that operates it own services,
-                                        unlike other companies who are only agents, we are recognized by the Tanzania
-                                        National Parks Authority and e are registered under TARA(Tourism License Agent).
-                                    </p>
-                                </div>
-                            </div>
+                        <div class="fas-why-us-main-sec-content">
+                            <p>If you are planning a trip to Tanzania or anywhere else in East Africa in the near
+                                future, you are in luck. Face of Africa Adventures will help you build the ultimate
+                                safari experience.</p>
+                            <p>Here at Face of Africa Adventures, we provide custom tours. Unlike most tour companies,
+                                Face of Africa Adventures does not limit you to specific dates and programs. Instead, we
+                                carefully tailor each vacation to suit your individual needs.</p>
+                            <p>Our guides are placed through two years of rigorous training and are passionate about
+                                their jobs. They will accommodate you to ensure you have the trip of a lifetime!</p>
                         </div>
-                        <div class="col-12">
-                            <div
-                                class="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 ps-0">
-                                <div class="service-icon p-4">
-                                    <i class="fa fa-user fa-4x text-primary"></i>
-                                </div>
-                                <div class="service-content">
-                                    <h5 class="mb-4">We are Flexible</h5>
-                                    <p class="mb-0">
-                                        We provide your custom tour, We are not fixed to dates or places, just tell us
-                                        about you and we will give you ypur ideal adventure.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="text-center">
-                        <a class="btn btn-primary rounded-pill py-3 px-5 mt-2" href="">Service More</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Services End -->
-    <!--  <div class="tab-class text-center">
-            <ul class="nav nav-pills d-inline-flex justify-content-center mb-5">
-                <li class="nav-item">
-                    <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill active" data-bs-toggle="pill"
-                        href="#GalleryTab-1">
-                        <span class="text-dark" style="width: 150px;">All</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="d-flex py-2 mx-3 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
-                        href="#GalleryTab-2">
-                        <span class="text-dark" style="width: 150px;">World tour</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
-                        href="#GalleryTab-3">
-                        <span class="text-dark" style="width: 150px;">Ocean Tour</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
-                        href="#GalleryTab-4">
-                        <span class="text-dark" style="width: 150px;">Summer Tour</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="d-flex mx-3 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
-                        href="#GalleryTab-5">
-                        <span class="text-dark" style="width: 150px;">Sport Tour</span>
-                    </a>
-                </li>
-            </ul>
-            <div class="tab-content">
-                <div id="GalleryTab-1" class="tab-pane fade show p-0 active">
-                    <div class="row g-2">
-                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
-                            <div class="gallery-item h-100">
-                                <img src="img/gallery-1.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
-                                <div class="gallery-content">
-                                    <div class="gallery-info">
-                                        <h5 class="text-white text-uppercase mb-2">World Tour</h5>
-                                        <a href="#" class="btn-hover text-white">View All Place <i
-                                                class="fa fa-arrow-right ms-2"></i></a>
-                                    </div>
-                                </div>
-                                <div class="gallery-plus-icon">
-                                    <a href="img/gallery-1.jpg" data-lightbox="gallery-1" class="my-auto"><i
-                                            class="fas fa-plus fa-2x text-white"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                            <div class="gallery-item h-100">
-                                <img src="img/gallery-2.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
-                                <div class="gallery-content">
-                                    <div class="gallery-info">
-                                        <h5 class="text-white text-uppercase mb-2">World Tour</h5>
-                                        <a href="#" class="btn-hover text-white">View All Place <i
-                                                class="fa fa-arrow-right ms-2"></i></a>
-                                    </div>
-                                </div>
-                                <div class="gallery-plus-icon">
-                                    <a href="img/gallery-2.jpg" data-lightbox="gallery-2" class="my-auto"><i
-                                            class="fas fa-plus fa-2x text-white"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
-                            <div class="gallery-item h-100">
-                                <img src="img/gallery-3.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
-                                <div class="gallery-content">
-                                    <div class="gallery-info">
-                                        <h5 class="text-white text-uppercase mb-2">World Tour</h5>
-                                        <a href="#" class="btn-hover text-white">View All Place <i
-                                                class="fa fa-arrow-right ms-2"></i></a>
-                                    </div>
-                                </div>
-                                <div class="gallery-plus-icon">
-                                    <a href="img/gallery-3.jpg" data-lightbox="gallery-3" class="my-auto"><i
-                                            class="fas fa-plus fa-2x text-white"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                            <div class="gallery-item h-100">
-                                <img src="img/gallery-4.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
-                                <div class="gallery-content">
-                                    <div class="gallery-info">
-                                        <h5 class="text-white text-uppercase mb-2">World Tour</h5>
-                                        <a href="#" class="btn-hover text-white">View All Place <i
-                                                class="fa fa-arrow-right ms-2"></i></a>
-                                    </div>
-                                </div>
-                                <div class="gallery-plus-icon">
-                                    <a href="img/gallery-4.jpg" data-lightbox="gallery-4" class="my-auto"><i
-                                            class="fas fa-plus fa-2x text-white"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
-                            <div class="gallery-item h-100">
-                                <img src="img/gallery-5.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
-                                <div class="gallery-content">
-                                    <div class="gallery-info">
-                                        <h5 class="text-white text-uppercase mb-2">World Tour</h5>
-                                        <a href="#" class="btn-hover text-white">View All Place <i
-                                                class="fa fa-arrow-right ms-2"></i></a>
-                                    </div>
-                                </div>
-                                <div class="gallery-plus-icon">
-                                    <a href="img/gallery-5.jpg" data-lightbox="gallery-5" class="my-auto"><i
-                                            class="fas fa-plus fa-2x text-white"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
-                            <div class="gallery-item h-100">
-                                <img src="img/gallery-6.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
-                                <div class="gallery-content">
-                                    <div class="gallery-info">
-                                        <h5 class="text-white text-uppercase mb-2">World Tour</h5>
-                                        <a href="#" class="btn-hover text-white">View All Place <i
-                                                class="fa fa-arrow-right ms-2"></i></a>
-                                    </div>
-                                </div>
-                                <div class="gallery-plus-icon">
-                                    <a href="img/gallery-6.jpg" data-lightbox="gallery-6" class="my-auto"><i
-                                            class="fas fa-plus fa-2x text-white"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
-                            <div class="gallery-item h-100">
-                                <img src="img/gallery-7.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
-                                <div class="gallery-content">
-                                    <div class="gallery-info">
-                                        <h5 class="text-white text-uppercase mb-2">World Tour</h5>
-                                        <a href="#" class="btn-hover text-white">View All Place <i
-                                                class="fa fa-arrow-right ms-2"></i></a>
-                                    </div>
-                                </div>
-                                <div class="gallery-plus-icon">
-                                    <a href="img/gallery-7.jpg" data-lightbox="gallery-7" class="my-auto"><i
-                                            class="fas fa-plus fa-2x text-white"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-3 col-xl-2">
-                            <div class="gallery-item h-100">
-                                <img src="img/gallery-8.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
-                                <div class="gallery-content">
-                                    <div class="gallery-info">
-                                        <h5 class="text-white text-uppercase mb-2">World Tour</h5>
-                                        <a href="#" class="btn-hover text-white">View All Place <i
-                                                class="fa fa-arrow-right ms-2"></i></a>
-                                    </div>
-                                </div>
-                                <div class="gallery-plus-icon">
-                                    <a href="img/gallery-8.jpg" data-lightbox="gallery-8" class="my-auto"><i
-                                            class="fas fa-plus fa-2x text-white"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
-                            <div class="gallery-item h-100">
-                                <img src="img/gallery-9.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
-                                <div class="gallery-content">
-                                    <div class="gallery-info">
-                                        <h5 class="text-white text-uppercase mb-2">World Tour</h5>
-                                        <a href="#" class="btn-hover text-white">View All Place <i
-                                                class="fa fa-arrow-right ms-2"></i></a>
-                                    </div>
-                                </div>
-                                <div class="gallery-plus-icon">
-                                    <a href="img/gallery-9.jpg" data-lightbox="gallery-9" class="my-auto"><i
-                                            class="fas fa-plus fa-2x text-white"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-3 col-xl-2">
-                            <div class="gallery-item h-100">
-                                <img src="img/gallery-10.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
-                                <div class="gallery-content">
-                                    <div class="gallery-info">
-                                        <h5 class="text-white text-uppercase mb-2">World Tour</h5>
-                                        <a href="#" class="btn-hover text-white">View All Place <i
-                                                class="fa fa-arrow-right ms-2"></i></a>
-                                    </div>
-                                </div>
-                                <div class="gallery-plus-icon">
-                                    <a href="img/gallery-10.jpg" data-lightbox="gallery-10" class="my-auto"><i
-                                            class="fas fa-plus fa-2x text-white"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="GalleryTab-2" class="tab-pane fade show p-0">
-                    <div class="row g-2">
-                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                            <div class="gallery-item h-100">
-                                <img src="img/gallery-2.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
-                                <div class="gallery-content">
-                                    <div class="gallery-info">
-                                        <h5 class="text-white text-uppercase mb-2">World Tour</h5>
-                                        <a href="#" class="btn-hover text-white">View All Place <i
-                                                class="fa fa-arrow-right ms-2"></i></a>
-                                    </div>
-                                </div>
-                                <div class="gallery-plus-icon">
-                                    <a href="img/gallery-2.jpg" data-lightbox="gallery-2" class="my-auto"><i
-                                            class="fas fa-plus fa-2x text-white"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
-                            <div class="gallery-item h-100">
-                                <img src="img/gallery-3.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
-                                <div class="gallery-content">
-                                    <div class="gallery-info">
-                                        <h5 class="text-white text-uppercase mb-2">World Tour</h5>
-                                        <a href="#" class="btn-hover text-white">View All Place <i
-                                                class="fa fa-arrow-right ms-2"></i></a>
-                                    </div>
-                                </div>
-                                <div class="gallery-plus-icon">
-                                    <a href="img/gallery-3.jpg" data-lightbox="gallery-3" class="my-auto"><i
-                                            class="fas fa-plus fa-2x text-white"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="GalleryTab-3" class="tab-pane fade show p-0">
-                    <div class="row g-2">
-                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                            <div class="gallery-item h-100">
-                                <img src="img/gallery-2.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
-                                <div class="gallery-content">
-                                    <div class="gallery-info">
-                                        <h5 class="text-white text-uppercase mb-2">World Tour</h5>
-                                        <a href="#" class="btn-hover text-white">View All Place <i
-                                                class="fa fa-arrow-right ms-2"></i></a>
-                                    </div>
-                                </div>
-                                <div class="gallery-plus-icon">
-                                    <a href="img/gallery-2.jpg" data-lightbox="gallery-2" class="my-auto"><i
-                                            class="fas fa-plus fa-2x text-white"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
-                            <div class="gallery-item h-100">
-                                <img src="img/gallery-3.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
-                                <div class="gallery-content">
-                                    <div class="gallery-info">
-                                        <h5 class="text-white text-uppercase mb-2">World Tour</h5>
-                                        <a href="#" class="btn-hover text-white">View All Place <i
-                                                class="fa fa-arrow-right ms-2"></i></a>
-                                    </div>
-                                </div>
-                                <div class="gallery-plus-icon">
-                                    <a href="img/gallery-3.jpg" data-lightbox="gallery-3" class="my-auto"><i
-                                            class="fas fa-plus fa-2x text-white"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="GalleryTab-4" class="tab-pane fade show p-0">
-                    <div class="row g-2">
-                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                            <div class="gallery-item h-100">
-                                <img src="img/gallery-2.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
-                                <div class="gallery-content">
-                                    <div class="gallery-info">
-                                        <h5 class="text-white text-uppercase mb-2">World Tour</h5>
-                                        <a href="#" class="btn-hover text-white">View All Place <i
-                                                class="fa fa-arrow-right ms-2"></i></a>
-                                    </div>
-                                </div>
-                                <div class="gallery-plus-icon">
-                                    <a href="img/gallery-2.jpg" data-lightbox="gallery-2" class="my-auto"><i
-                                            class="fas fa-plus fa-2x text-white"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
-                            <div class="gallery-item h-100">
-                                <img src="img/gallery-3.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
-                                <div class="gallery-content">
-                                    <div class="gallery-info">
-                                        <h5 class="text-white text-uppercase mb-2">World Tour</h5>
-                                        <a href="#" class="btn-hover text-white">View All Place <i
-                                                class="fa fa-arrow-right ms-2"></i></a>
-                                    </div>
-                                </div>
-                                <div class="gallery-plus-icon">
-                                    <a href="img/gallery-3.jpg" data-lightbox="gallery-3" class="my-auto"><i
-                                            class="fas fa-plus fa-2x text-white"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="GalleryTab-5" class="tab-pane fade show p-0">
-                    <div class="row g-2">
-                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                            <div class="gallery-item h-100">
-                                <img src="img/gallery-2.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
-                                <div class="gallery-content">
-                                    <div class="gallery-info">
-                                        <h5 class="text-white text-uppercase mb-2">World Tour</h5>
-                                        <a href="#" class="btn-hover text-white">View All Place <i
-                                                class="fa fa-arrow-right ms-2"></i></a>
-                                    </div>
-                                </div>
-                                <div class="gallery-plus-icon">
-                                    <a href="img/gallery-2.jpg" data-lightbox="gallery-2" class="my-auto"><i
-                                            class="fas fa-plus fa-2x text-white"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
-                            <div class="gallery-item h-100">
-                                <img src="img/gallery-3.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
-                                <div class="gallery-content">
-                                    <div class="gallery-info">
-                                        <h5 class="text-white text-uppercase mb-2">World Tour</h5>
-                                        <a href="#" class="btn-hover text-white">View All Place <i
-                                                class="fa fa-arrow-right ms-2"></i></a>
-                                    </div>
-                                </div>
-                                <div class="gallery-plus-icon">
-                                    <a href="img/gallery-3.jpg" data-lightbox="gallery-3" class="my-auto"><i
-                                            class="fas fa-plus fa-2x text-white"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
-    <!-- Gallery End -->
+    </section>
 
     <!-- Travel Guide Start -->
-    <div class="container-fluid guide py-5">
-        <div class="container py-5">
-            <div class="mx-auto text-center mb-5" style="max-width: 900px;">
-                <h5 class="section-title px-3">Travel Guide</h5>
-                <h1 class="mb-0">Meet Our Guide</h1>
+    <div class="container">
+        <div class="row">
+            <div class="fas-selling-tour-heading pt-5">
+                <center>
+                    <h5 class="section-title ">Travel tips from</h5>
+                </center>
+                <h2 class="mb-4 text-center">Face of Africa Adventures</h2>
+
             </div>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <div class="guide-item">
-                        <div class="guide-img">
-                            <div class="guide-img-efects">
-
-                            </div>
-                            <div class="guide-icon rounded-pill p-2">
-                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
-                                        class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
-                                        class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                        <div class="guide-title text-center rounded-bottom p-4">
-                            <div class="guide-title-inner">
-                                <h4 class="mt-3">Full Name</h4>
-                                <p class="mb-0">Designation</p>
-                            </div>
-                        </div>
+            <div class="fas-top-service-main">
+                <a href="what-to-take-on-tanzania-safari">
+                    <div class="fas-top-service-div fas-top-service-border">
+                        <img src="images/business.png" alt="What To Take On Tanzania Safari"
+                            title="What To Take On Tanzania Safari">
+                        <h3>What To Take On Tanzania Safari</h3>
+                        <p>We always lived inside our amazing nature</p>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="guide-item">
-                        <div class="guide-img">
-                            <div class="guide-img-efects">
-
-                            </div>
-                            <div class="guide-icon rounded-pill p-2">
-                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
-                                        class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
-                                        class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                        <div class="guide-title text-center rounded-bottom p-4">
-                            <div class="guide-title-inner">
-                                <h4 class="mt-3">Full Name</h4>
-                                <p class="mb-0">Designation</p>
-                            </div>
-                        </div>
+                </a>
+                <a href="tanzania-travel-insurance">
+                    <div class="fas-top-service-div fas-top-service-border">
+                        <img src="images/visa.png" alt="Tanzania Travel Insurance" title="Tanzania Travel Insurance">
+                        <h3>Tanzania Travel Insurance</h3>
+                        <p>Thorough protection is for anybody going</p>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="guide-item">
-                        <div class="guide-img">
-                            <div class="guide-img-efects">
-
-                            </div>
-                            <div class="guide-icon rounded-pill p-2">
-                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
-                                        class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
-                                        class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                        <div class="guide-title text-center rounded-bottom p-4">
-                            <div class="guide-title-inner">
-                                <h4 class="mt-3">Full Name</h4>
-                                <p class="mb-0">Designation</p>
-                            </div>
-                        </div>
+                </a>
+                <a href="medical-kits-for-tanzania-safari">
+                    <div class="fas-top-service-div fas-top-service-border">
+                        <img src="images/healthcare-and-medical.png" alt="Medical Kits For Tanzania Safari"
+                            title="Medical Kits For Tanzania Safari">
+                        <h3>Medical Kits For Tanzania Safari</h3>
+                        <p>Despite the fact that treatment unit is open</p>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="guide-item">
-                        <div class="guide-img">
-                            <div class="guide-img-efects">
-
-                            </div>
-                            <div class="guide-icon rounded-pill p-2">
-                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
-                                        class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
-                                        class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                        <div class="guide-title text-center rounded-bottom p-4">
-                            <div class="guide-title-inner">
-                                <h4 class="mt-3">Full Name</h4>
-                                <p class="mb-0">Designation</p>
-                            </div>
-                        </div>
+                </a>
+                <a href="tanzania-safari-equipments">
+                    <div class="fas-top-service-div fas-top-service-border-1">
+                        <img src="images/check.png" alt="Tanzania Safari Equipments" title="Tanzania Safari Equipments">
+                        <h3>Tanzania Safari Equipments</h3>
+                        <p>When you are setting out toward a African Safari</p>
                     </div>
-                </div>
+                </a>
+                <a href="best-time-to-visit-tanzania-safari">
+                    <div class="fas-top-service-div fas-top-service-border-2">
+                        <img src="images/drizzle.png" alt="Best Time For Safari" title="Best Time For Safari">
+                        <h3>Best Time For Safari</h3>
+                        <p>We always lived inside our amazing nature</p>
+                    </div>
+                </a>
+                <a href="how-to-go-tanzania-safari">
+                    <div class="fas-top-service-div fas-top-service-border-2">
+                        <img src="images/transport.png" alt="How To Go Tanzania Safari"
+                            title="How To Go Tanzania Safari">
+                        <h3>How To Go Tanzania Safari</h3>
+                        <p>We always lived inside our amazing nature</p>
+                    </div>
+                </a>
+                <a href="tanzania-safari-guide">
+                    <div class="fas-top-service-div fas-top-service-border-2">
+                        <img src="images/business-11.png" alt="Tanzania Safari Guide" title="Tanzania Safari Guide">
+                        <h3>Tanzania Safari Guide</h3>
+                        <p>We always lived inside our amazing nature</p>
+                    </div>
+                </a>
+                <a href="tanzania-food">
+                    <div class="fas-top-service-div fas-top-service-border-3">
+                        <img src="images/transportation.png" alt="Tanzania Food" title="Tanzania Food">
+                        <h3>Tanzania Food</h3>
+                        <p>We always lived inside our amazing nature</p>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
@@ -1693,18 +1562,19 @@
                     <div class="blog-item">
                         <div class="blog-img">
                             <div class="blog-img-inner">
-                                <img class="img-fluid w-100 rounded-top" src="img/blog-1.jpg" alt="Image">
+                                <img class="img-fluid w-100 rounded-top" src="img/Leopard in Murchison Fall.jpeg"
+                                    alt="Image">
                                 <div class="blog-icon">
                                     <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
                                 </div>
                             </div>
                             <div class="blog-info d-flex align-items-center border border-start-0 border-end-0">
                                 <small class="flex-fill text-center border-end py-2"><i
-                                        class="fa fa-calendar-alt text-primary me-2"></i>28 Jan 2050</small>
+                                        class="fa fa-calendar-alt text-warning me-2"></i>28 Jan 2050</small>
                                 <a href="#" class="btn-hover flex-fill text-center text-white border-end py-2"><i
-                                        class="fa fa-thumbs-up text-primary me-2"></i>1.7K</a>
+                                        class="fa fa-thumbs-up text-warning me-2"></i>1.7K</a>
                                 <a href="#" class="btn-hover flex-fill text-center text-white py-2"><i
-                                        class="fa fa-comments text-primary me-2"></i>1K</a>
+                                        class="fa fa-comments text-warning me-2"></i>1K</a>
                             </div>
                         </div>
                         <div class="blog-content border border-top-0 rounded-bottom p-4">
@@ -1720,18 +1590,18 @@
                     <div class="blog-item">
                         <div class="blog-img">
                             <div class="blog-img-inner">
-                                <img class="img-fluid w-100 rounded-top" src="img/blog-2.jpg" alt="Image">
+                                <img class="img-fluid w-100 rounded-top" src="img/desending.JPG" alt="Image">
                                 <div class="blog-icon">
                                     <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
                                 </div>
                             </div>
                             <div class="blog-info d-flex align-items-center border border-start-0 border-end-0">
                                 <small class="flex-fill text-center border-end py-2"><i
-                                        class="fa fa-calendar-alt text-primary me-2"></i>28 Jan 2050</small>
+                                        class="fa fa-calendar-alt text-warning me-2"></i>28 Jan 2050</small>
                                 <a href="#" class="btn-hover flex-fill text-center text-white border-end py-2"><i
-                                        class="fa fa-thumbs-up text-primary me-2"></i>1.7K</a>
+                                        class="fa fa-thumbs-up text-warning me-2"></i>1.7K</a>
                                 <a href="#" class="btn-hover flex-fill text-center text-white py-2"><i
-                                        class="fa fa-comments text-primary me-2"></i>1K</a>
+                                        class="fa fa-comments text-warning me-2"></i>1K</a>
                             </div>
                         </div>
                         <div class="blog-content border border-top-0 rounded-bottom p-4">
@@ -1747,18 +1617,18 @@
                     <div class="blog-item">
                         <div class="blog-img">
                             <div class="blog-img-inner">
-                                <img class="img-fluid w-100 rounded-top" src="img/blog-3.jpg" alt="Image">
+                                <img class="img-fluid w-100 rounded-top" src="img/retreat4.jpg" alt="Image">
                                 <div class="blog-icon">
                                     <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
                                 </div>
                             </div>
                             <div class="blog-info d-flex align-items-center border border-start-0 border-end-0">
                                 <small class="flex-fill text-center border-end py-2"><i
-                                        class="fa fa-calendar-alt text-primary me-2"></i>28 Jan 2050</small>
+                                        class="fa fa-calendar-alt text-warning me-2"></i>28 Jan 2050</small>
                                 <a href="#" class="btn-hover flex-fill text-center text-white border-end py-2"><i
-                                        class="fa fa-thumbs-up text-primary me-2"></i>1.7K</a>
+                                        class="fa fa-thumbs-up text-warning me-2"></i>1.7K</a>
                                 <a href="#" class="btn-hover flex-fill text-center text-white py-2"><i
-                                        class="fa fa-comments text-primary me-2"></i>1K</a>
+                                        class="fa fa-comments text-warning me-2"></i>1K</a>
                             </div>
                         </div>
                         <div class="blog-content border border-top-0 rounded-bottom p-4">
@@ -1776,104 +1646,724 @@
     <!-- Blog End -->
 
     <!-- Testimonial Start -->
-    <div class="container-fluid testimonial py-5">
-        <div class="container py-5">
-            <div class="mx-auto text-center mb-5" style="max-width: 900px;">
-                <h5 class="section-title px-3">Testimonial</h5>
-                <h1 class="mb-0">Our Clients Say!!!</h1>
-            </div>
-            <div class="testimonial-carousel owl-carousel">
-                <div class="testimonial-item text-center rounded pb-4">
-                    <div class="testimonial-comment bg-light rounded p-4">
-                        <p class="text-center mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
-                            nostrum cupiditate, eligendi repellendus saepe illum earum architecto dicta quisquam quasi
-                            porro officiis. Vero reiciendis,
-                        </p>
+    <section class="fas-reviews">
+        <div class="container">
+            <div class="row">
+                <div class="fas-reviews-main">
+                    <div class="fas-selling-tour-heading">
+                        <center>
+                            <h5 class="section-title">Read The Top</h5>
+                        </center>
+                        <h2 class="text-center"> Travelers Reviews</h2>
                     </div>
-                    <div class="testimonial-img p-1">
-
-                    </div>
-                    <div style="margin-top: -35px;">
-                        <h5 class="mb-0">John Abraham</h5>
-                        <p class="mb-0">New York, USA</p>
-                        <div class="d-flex justify-content-center">
-                            <i class="fas fa-star text-primary"></i>
-                            <i class="fas fa-star text-primary"></i>
-                            <i class="fas fa-star text-primary"></i>
-                            <i class="fas fa-star text-primary"></i>
-                            <i class="fas fa-star text-primary"></i>
+                    <div class="fas-selling-tour-logo">
+                        <div class="fas-selling-tour-logo-image">
+                            <a
+                                href="https://www.tripadvisor.in/Attraction_Review-g297913-d11951606-Reviews-Face_of_Africa_Adventures-Arusha_Arusha_Region.html">
+                                <img src="images/trip-logo.avif" alt="Trip Advisor" title="Trip Advisor">
+                            </a>
+                            <a href="https://www.safaribookings.com/p1890">
+                                <img src="images/trip-logo-1.png" alt="Safari Booking" title="Safari Booking">
+                            </a>
+                            <a href="https://www.safaribookings.com/p1890">
+                                <img src="images/trip-logo-3.png" alt="Safari Booking" title="Safari Booking">
+                            </a>
+                            <a href="https://www.safaribookings.com/p1890">
+                                <img src="images/trip-logo-4.avif" alt="Safari Booking" title="Safari Booking">
+                            </a>
                         </div>
                     </div>
-                </div>
-                <div class="testimonial-item text-center rounded pb-4">
-                    <div class="testimonial-comment bg-light rounded p-4">
-                        <p class="text-center mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
-                            nostrum cupiditate, eligendi repellendus saepe illum earum architecto dicta quisquam quasi
-                            porro officiis. Vero reiciendis,
-                        </p>
-                    </div>
-                    <div class="testimonial-img p-1">
-
-                    </div>
-                    <div style="margin-top: -35px;">
-                        <h5 class="mb-0">John Abraham</h5>
-                        <p class="mb-0">New York, USA</p>
-                        <div class="d-flex justify-content-center">
-                            <i class="fas fa-star text-primary"></i>
-                            <i class="fas fa-star text-primary"></i>
-                            <i class="fas fa-star text-primary"></i>
-                            <i class="fas fa-star text-primary"></i>
-                            <i class="fas fa-star text-primary"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center rounded pb-4">
-                    <div class="testimonial-comment bg-light rounded p-4">
-                        <p class="text-center mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
-                            nostrum cupiditate, eligendi repellendus saepe illum earum architecto dicta quisquam quasi
-                            porro officiis. Vero reiciendis,
-                        </p>
-                    </div>
-                    <div class="testimonial-img p-1">
-
-                    </div>
-                    <div style="margin-top: -35px;">
-                        <h5 class="mb-0">John Abraham</h5>
-                        <p class="mb-0">New York, USA</p>
-                        <div class="d-flex justify-content-center">
-                            <i class="fas fa-star text-primary"></i>
-                            <i class="fas fa-star text-primary"></i>
-                            <i class="fas fa-star text-primary"></i>
-                            <i class="fas fa-star text-primary"></i>
-                            <i class="fas fa-star text-primary"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center rounded pb-4">
-                    <div class="testimonial-comment bg-light rounded p-4">
-                        <p class="text-center mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
-                            nostrum cupiditate, eligendi repellendus saepe illum earum architecto dicta quisquam quasi
-                            porro officiis. Vero reiciendis,
-                        </p>
-                    </div>
-                    <div class="testimonial-img p-1">
-
-                    </div>
-                    <div style="margin-top: -35px;">
-                        <h5 class="mb-0">John Abraham</h5>
-                        <p class="mb-0">New York, USA</p>
-                        <div class="d-flex justify-content-center">
-                            <i class="fas fa-star text-primary"></i>
-                            <i class="fas fa-star text-primary"></i>
-                            <i class="fas fa-star text-primary"></i>
-                            <i class="fas fa-star text-primary"></i>
-                            <i class="fas fa-star text-primary"></i>
+                    <div class="fas-reviews-div" style="overflow:hidden;">
+                        <div class="fas-reviews-slider owl-carousel">
+                            <div class="itom">
+                                <div class="fas-reviews-sec">
+                                    <div class="fas-reviews-sec-heading">
+                                        <div class="fas-reviews-sec-heading-1">
+                                            <img src="images/review.avif" alt="Monica Nickel" title="Monica Nickel">
+                                        </div>
+                                        <div class="fas-reviews-sec-heading-2">
+                                            <h5>Monica Nickel</h5>
+                                            <div class="fas-reviews-sec-heading-3">
+                                                <ul>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fas-reviews-sec-content">
+                                        <p>It was a wonderful experience. We found a perfect organization with a very
+                                            professional guide Shafi. We enjoyed a lot every single day watching a lot
+                                            of animals and amazing landscapes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itom">
+                                <div class="fas-reviews-sec">
+                                    <div class="fas-reviews-sec-heading">
+                                        <div class="fas-reviews-sec-heading-1">
+                                            <img src="images/review-2.jpg" alt="GeorgeXgr" title="GeorgeXgr">
+                                        </div>
+                                        <div class="fas-reviews-sec-heading-2">
+                                            <h5>GeorgeXgr</h5>
+                                            <div class="fas-reviews-sec-heading-3">
+                                                <ul>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fas-reviews-sec-content">
+                                        <p>We decided to go on a 3-days safari in Serengeti & Ngorongoro National Park.
+                                            After doing extensive research over internet, reading several reviews we
+                                            eventually chose Face of Africa. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itom">
+                                <div class="fas-reviews-sec">
+                                    <div class="fas-reviews-sec-heading">
+                                        <div class="fas-reviews-sec-heading-1">
+                                            <img src="images/review-3.jpg" alt="Viktoria F" title="Viktoria F">
+                                        </div>
+                                        <div class="fas-reviews-sec-heading-2">
+                                            <h5>Viktoria F</h5>
+                                            <div class="fas-reviews-sec-heading-3">
+                                                <ul>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fas-reviews-sec-content">
+                                        <p>It was amazing . Our guide was very kind and helpful. He could answer every
+                                            single question, and it never happened to be annoying. Beautiful experience
+                                            : Thank ...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itom">
+                                <div class="fas-reviews-sec">
+                                    <div class="fas-reviews-sec-heading">
+                                        <div class="fas-reviews-sec-heading-1">
+                                            <img src="images/review-5.jpg" alt="John Muir Laws" title="John Muir Laws">
+                                        </div>
+                                        <div class="fas-reviews-sec-heading-2">
+                                            <h5>John Muir Laws</h5>
+                                            <div class="fas-reviews-sec-heading-3">
+                                                <ul>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fas-reviews-sec-content">
+                                        <p>We had a great experience with FOAA. Each driver/guide has been through a
+                                            rigorous training program at the university and had rich information to
+                                            share about ecology, mammals, birds, and plants.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itom">
+                                <div class="fas-reviews-sec">
+                                    <div class="fas-reviews-sec-heading">
+                                        <div class="fas-reviews-sec-heading-1">
+                                            <img src="images/review-6.jpg" alt="Marlene R" title="Marlene R">
+                                        </div>
+                                        <div class="fas-reviews-sec-heading-2">
+                                            <h5>Marlene R</h5>
+                                            <div class="fas-reviews-sec-heading-3">
+                                                <ul>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fas-reviews-sec-content">
+                                        <p>I was looking for a provider for my day trip to the Arusha National Park. Via
+                                            Instagram I joined Faces of Africa Adventures and booked my tour there. The
+                                            driver and guide had a safe driving style.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itom">
+                                <div class="fas-reviews-sec">
+                                    <div class="fas-reviews-sec-heading">
+                                        <div class="fas-reviews-sec-heading-1">
+                                            <img src="images/review-7.jpg" alt="Leena Khanzode" title="Leena Khanzode">
+                                        </div>
+                                        <div class="fas-reviews-sec-heading-2">
+                                            <h5>Leena Khanzode</h5>
+                                            <div class="fas-reviews-sec-heading-3">
+                                                <ul>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fas-reviews-sec-content">
+                                        <p>The communication from Hamadi was prompt. Our guides Shaffie and Muta were
+                                            very knowledgeable and found some incredible animals and birds for us!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itom">
+                                <div class="fas-reviews-sec">
+                                    <div class="fas-reviews-sec-heading">
+                                        <div class="fas-reviews-sec-heading-1">
+                                            <img src="images/review-8.jpg" alt="Lori Larue" title="Lori Larue">
+                                        </div>
+                                        <div class="fas-reviews-sec-heading-2">
+                                            <h5>Lori Larue</h5>
+                                            <div class="fas-reviews-sec-heading-3">
+                                                <ul>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fas-reviews-sec-content">
+                                        <p>Just returned from a week long safari with Face of Africa Adventures. Hamadi
+                                            was very helpful as we planned and prepared for our trip. Overall, it was a
+                                            superb Safari experience and I highly recommend Face of Africa Adventures.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itom">
+                                <div class="fas-reviews-sec">
+                                    <div class="fas-reviews-sec-heading">
+                                        <div class="fas-reviews-sec-heading-1">
+                                            <img src="images/review-9.avif" alt="Amy Thaker" title="Amy Thaker">
+                                        </div>
+                                        <div class="fas-reviews-sec-heading-2">
+                                            <h5>Amy Thaker</h5>
+                                            <div class="fas-reviews-sec-heading-3">
+                                                <ul>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fas-reviews-sec-content">
+                                        <p>We went on a 5-day safari with Face of Africa Adventures and it was truly the
+                                            trip of a life time. Our guide Shaffie was experienced and very
+                                            knowledgeable. I would recommend Face of Africa Adventures.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itom">
+                                <div class="fas-reviews-sec">
+                                    <div class="fas-reviews-sec-heading">
+                                        <div class="fas-reviews-sec-heading-1">
+                                            <img src="images/review-10.jpg" alt="Laura Gardner" title="Laura Gardner">
+                                        </div>
+                                        <div class="fas-reviews-sec-heading-2">
+                                            <h5>Laura Gardner</h5>
+                                            <div class="fas-reviews-sec-heading-3">
+                                                <ul>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fas-reviews-sec-content">
+                                        <p>I highly recommend Face of Africa Adventures. The Safari they organized for
+                                            my group in July 2019 was fantastic. The accommodations were great, The team
+                                            is very responsive, and you will have a trip of a lifetime. Five stars.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itom">
+                                <div class="fas-reviews-sec">
+                                    <div class="fas-reviews-sec-heading">
+                                        <div class="fas-reviews-sec-heading-1">
+                                            <img src="images/review-11.avif" alt="Rebecca Taft" title="Rebecca Taft">
+                                        </div>
+                                        <div class="fas-reviews-sec-heading-2">
+                                            <h5>Rebecca Taft</h5>
+                                            <div class="fas-reviews-sec-heading-3">
+                                                <ul>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fas-reviews-sec-content">
+                                        <p>Exceeded our Expectations in Every Way. Way better prices than other
+                                            operators we compared. The vehicle is perfect and the staff is friendly and
+                                            helpful with endless enthusiasm and knowledge! I recommend them heartily!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itom">
+                                <div class="fas-reviews-sec">
+                                    <div class="fas-reviews-sec-heading">
+                                        <div class="fas-reviews-sec-heading-1">
+                                            <img src="images/review-12.avif" alt="GargiChugh" title="GargiChugh">
+                                        </div>
+                                        <div class="fas-reviews-sec-heading-2">
+                                            <h5>GargiChugh</h5>
+                                            <div class="fas-reviews-sec-heading-3">
+                                                <ul>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fas-reviews-sec-content">
+                                        <p>This was my first time visiting Africa. I was worried about what the
+                                            transportation, accommodation and food would be like Thank you so much for
+                                            making our trip so memorable, Face of Africa Team!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itom">
+                                <div class="fas-reviews-sec">
+                                    <div class="fas-reviews-sec-heading">
+                                        <div class="fas-reviews-sec-heading-1">
+                                            <img src="images/review-24.jpg" alt="Lauren McArthur"
+                                                title="Lauren McArthur">
+                                        </div>
+                                        <div class="fas-reviews-sec-heading-2">
+                                            <h5>Lauren McArthur</h5>
+                                            <div class="fas-reviews-sec-heading-3">
+                                                <ul>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fas-reviews-sec-content">
+                                        <p>What an amazing experience! Face of Africa Adventures lived up to their name
+                                            with outstanding hospitality and a top notch tour guide! The accommodations
+                                            were also outstanding and a great place.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itom">
+                                <div class="fas-reviews-sec">
+                                    <div class="fas-reviews-sec-heading">
+                                        <div class="fas-reviews-sec-heading-1">
+                                            <img src="images/review-14.jpg" alt="Leonie" title="Leonie">
+                                        </div>
+                                        <div class="fas-reviews-sec-heading-2">
+                                            <h5>Leonie</h5>
+                                            <div class="fas-reviews-sec-heading-3">
+                                                <ul>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fas-reviews-sec-content">
+                                        <p>Face of Africa heeft wat mijbetreftechteendikke 10 verdiend. Zo op maaten
+                                            wens eenpakketsamenstellenen de super vriendelijke chauffeur die </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itom">
+                                <div class="fas-reviews-sec">
+                                    <div class="fas-reviews-sec-heading">
+                                        <div class="fas-reviews-sec-heading-1">
+                                            <img src="images/review-15.jpg" alt="Dorota & Tom" title="Dorota & Tom">
+                                        </div>
+                                        <div class="fas-reviews-sec-heading-2">
+                                            <h5>Dorota & Tom</h5>
+                                            <div class="fas-reviews-sec-heading-3">
+                                                <ul>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fas-reviews-sec-content">
+                                        <p>We had booked a private safari for two people/9 days. Each day was a new
+                                            experience together with Dickson -the best guide we have ever met. We spent
+                                            amazing time with truly wild animals.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itom">
+                                <div class="fas-reviews-sec">
+                                    <div class="fas-reviews-sec-heading">
+                                        <div class="fas-reviews-sec-heading-1">
+                                            <img src="images/review-16.jpg" alt="Martin & Barbora"
+                                                title="Martin & Barbora">
+                                        </div>
+                                        <div class="fas-reviews-sec-heading-2">
+                                            <h5>Martin & Barbora</h5>
+                                            <div class="fas-reviews-sec-heading-3">
+                                                <ul>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fas-reviews-sec-content">
+                                        <p>We cannot say anything else but huge Asante sana to Hamadi from Face of
+                                            Africa who helped us organize our Safari adventure, it was perfect to the
+                                            last detail…Hamadi was of a huge help for us to organize our safari.. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itom">
+                                <div class="fas-reviews-sec">
+                                    <div class="fas-reviews-sec-heading">
+                                        <div class="fas-reviews-sec-heading-1">
+                                            <img src="images/review-17.jpg" alt="StepankaOsmerova"
+                                                title="StepankaOsmerova">
+                                        </div>
+                                        <div class="fas-reviews-sec-heading-2">
+                                            <h5>StepankaOsmerova</h5>
+                                            <div class="fas-reviews-sec-heading-3">
+                                                <ul>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fas-reviews-sec-content">
+                                        <p>We were lucky to visit Ngorongoro with these guys. It was one of the best
+                                            days. We saw everything what we wanted, rhino too! The organization was
+                                            great and easygoing. I recommend at all!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itom">
+                                <div class="fas-reviews-sec">
+                                    <div class="fas-reviews-sec-heading">
+                                        <div class="fas-reviews-sec-heading-1">
+                                            <img src="images/review-18.avif" alt="Sai Krishna" title="Sai Krishna">
+                                        </div>
+                                        <div class="fas-reviews-sec-heading-2">
+                                            <h5>Sai Krishna</h5>
+                                            <div class="fas-reviews-sec-heading-3">
+                                                <ul>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fas-reviews-sec-content">
+                                        <p>My wife and I decided to climb Kilimanjaro for our 3rd anniversary. I looked
+                                            at other companies as well but none came even close to the customer service
+                                            offered by Hamadi.Our guides for the Macham route were outstanding.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itom">
+                                <div class="fas-reviews-sec">
+                                    <div class="fas-reviews-sec-heading">
+                                        <div class="fas-reviews-sec-heading-1">
+                                            <img src="images/review-13.jpg" alt="Liudmila" title="Liudmila">
+                                        </div>
+                                        <div class="fas-reviews-sec-heading-2">
+                                            <h5>Liudmila</h5>
+                                            <div class="fas-reviews-sec-heading-3">
+                                                <ul>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fas-reviews-sec-content">
+                                        <p>Very nice trip to Tanzania!, Tanzania northern circuit organized by Face of
+                                            Africa Adventures from the quick and friendly emails when first enquiring
+                                            and booking to the safari itself we had an incredible time.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itom">
+                                <div class="fas-reviews-sec">
+                                    <div class="fas-reviews-sec-heading">
+                                        <div class="fas-reviews-sec-heading-1">
+                                            <img src="images/review-26.jpg" alt="Christopher De Bruyne"
+                                                title="Christopher De Bruyne">
+                                        </div>
+                                        <div class="fas-reviews-sec-heading-2">
+                                            <h5>Christopher De Bruyne</h5>
+                                            <div class="fas-reviews-sec-heading-3">
+                                                <ul>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fas-reviews-sec-content">
+                                        <p>Unforgettable Safari tour with experienced and trustworthy organization. Face
+                                            of Africa Adventures gave us initially a warm welcome in Tanzania by picking
+                                            us up at Kilimanjaro airport in the middle of the night.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itom">
+                                <div class="fas-reviews-sec">
+                                    <div class="fas-reviews-sec-heading">
+                                        <div class="fas-reviews-sec-heading-1">
+                                            <img src="images/review-20.jpg" alt="Dana Vallarino" title="Dana Vallarino">
+                                        </div>
+                                        <div class="fas-reviews-sec-heading-2">
+                                            <h5>Dana Vallarino</h5>
+                                            <div class="fas-reviews-sec-heading-3">
+                                                <ul>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fas-reviews-sec-content">
+                                        <p>Amazing Safari experience with incredibly knowledgeable Guides-Once in a
+                                            Lifetime trip made perfect! This custom Safari was wonderful and far
+                                            exceeded my expectations! </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itom">
+                                <div class="fas-reviews-sec">
+                                    <div class="fas-reviews-sec-heading">
+                                        <div class="fas-reviews-sec-heading-1">
+                                            <img src="images/review-27.jpg" alt="Ángel Escot" title="Ángel Escot">
+                                        </div>
+                                        <div class="fas-reviews-sec-heading-2">
+                                            <h5>Ángel Escot</h5>
+                                            <div class="fas-reviews-sec-heading-3">
+                                                <ul>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fas-reviews-sec-content">
+                                        <p>Amazing experience in Tanzania thanks to Face of Africa, I hope you have my
+                                            humble opinion to decide on the company Face of Africa and enjoy its
+                                            innumerable advantages. Greetings travelers!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itom">
+                                <div class="fas-reviews-sec">
+                                    <div class="fas-reviews-sec-heading">
+                                        <div class="fas-reviews-sec-heading-1">
+                                            <img src="images/review-21.avif" alt="Sebastian Gomez"
+                                                title="Sebastian Gomez">
+                                        </div>
+                                        <div class="fas-reviews-sec-heading-2">
+                                            <h5>Sebastian Gomez</h5>
+                                            <div class="fas-reviews-sec-heading-3">
+                                                <ul>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fas-reviews-sec-content">
+                                        <p>Great 6-day safari with Nico and Face of Africa Adventures, We booked from
+                                            Germany a 6-day safari (15.09 to 20-09.2016) with Hamadi via this website.
+                                            Thank you very much again Hamadi and Nico!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itom">
+                                <div class="fas-reviews-sec">
+                                    <div class="fas-reviews-sec-heading">
+                                        <div class="fas-reviews-sec-heading-1">
+                                            <img src="images/review-22.avif" alt="Ramiro Planas" title="Ramiro Planas">
+                                        </div>
+                                        <div class="fas-reviews-sec-heading-2">
+                                            <h5>Ramiro Planas</h5>
+                                            <div class="fas-reviews-sec-heading-3">
+                                                <ul>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fas-reviews-sec-content">
+                                        <p>Amazing experience in Tanzania thanks to Face of Africa, We did a four days
+                                            safari in Tarangire, Serengeti and Ngorongoro. Face of Africa is highly
+                                            advisable as it is formed by a group of great professionals people. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itom">
+                                <div class="fas-reviews-sec">
+                                    <div class="fas-reviews-sec-heading">
+                                        <div class="fas-reviews-sec-heading-1">
+                                            <img src="images/review-25.jpg" alt="Amine Sobhi" title="Amine Sobhi">
+                                        </div>
+                                        <div class="fas-reviews-sec-heading-2">
+                                            <h5>Amine Sobhi</h5>
+                                            <div class="fas-reviews-sec-heading-3">
+                                                <ul>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fas-reviews-sec-content">
+                                        <p>I recommend Face of Africa Adventures to anyone looking for a serious and
+                                            affordable tour operator in Arusha for a safari or for any other fun
+                                            activities in the region. It Awesome stay in Arusha...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itom">
+                                <div class="fas-reviews-sec">
+                                    <div class="fas-reviews-sec-heading">
+                                        <div class="fas-reviews-sec-heading-1">
+                                            <img src="images/review-23.jpg" alt="Alexandra Donaldson"
+                                                title="Alexandra Donaldson">
+                                        </div>
+                                        <div class="fas-reviews-sec-heading-2">
+                                            <h5>Alexandra Donaldson</h5>
+                                            <div class="fas-reviews-sec-heading-3">
+                                                <ul>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fas-reviews-sec-content">
+                                        <p>4 days 3-night Camping Safari, Tarangire, Ngorongoro Crater, Serengeti. I
+                                            found Face of Africa online and contacted Hamadi to book. You transfer 30%
+                                            of the cost in advance and then pay the rest on arrival.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="itom">
+                                <div class="fas-reviews-sec">
+                                    <div class="fas-reviews-sec-heading">
+                                        <div class="fas-reviews-sec-heading-1">
+                                            <img src="images/review-28.jpg" alt="Agnieszka Wislocka"
+                                                title="Agnieszka Wislocka">
+                                        </div>
+                                        <div class="fas-reviews-sec-heading-2">
+                                            <h5>Agnieszka Wislocka</h5>
+                                            <div class="fas-reviews-sec-heading-3">
+                                                <ul>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star-half-alt"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fas-reviews-sec-content">
+                                        <p>GOOD BUDGET SAFARI!, We booked a safari with Hamadi and it was just awesome!
+                                            He organized not even the tour for us; he even helped us with bus tickets to
+                                            Dar es Salaam. </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Testimonial End -->
 
     <footer-component></footer-component>

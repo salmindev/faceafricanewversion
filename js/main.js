@@ -114,6 +114,67 @@
         }
     });
 
+    jQuery(".fas-tavel-with-slider").owlCarousel({
+        autoplay: true,
+        lazyLoad: true,
+        loop: true,
+        margin: 20,
+         /*
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        */
+        responsiveClass: true,
+        autoHeight: true,
+        autoplayTimeout: 7000,
+        smartSpeed: 800,
+        nav: true,
+        responsive: {
+          0: {
+            items: 2
+          },
+
+          600: {
+            items: 3
+          },
+
+          1024: {
+            items: 3
+          },
+
+          1366: {
+            items: 3
+          }
+        }
+      });
+
+   var fasreviewsslider = $('.fas-reviews-slider').owlCarousel({
+      items: 4,
+      loop: true,
+      dots: true,
+      autoplayHoverPause: false,
+      autoplay: true,
+      margin: 20,
+      singleItem: true,
+      smartSpeed: 1000,
+      autoplayTimeout: 3000,
+      responsive: {
+          0: {
+              loop: true,
+              items: 1
+          },
+          600: {
+              loop: true,
+              items: 2
+          },
+          900: {
+              loop: true,
+              items: 3
+          },
+          1000: {
+              items: 3
+          }
+      }
+  });
     
    // Back to top button
    $(window).scroll(function () {
