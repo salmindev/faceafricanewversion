@@ -109,7 +109,7 @@ class NavbarComponent extends LitElement {
    
 
     <div class="navbar navbar-expand-lg navbar-light  text-dark  d-none d-md-block" id="ftco-navbar" style="margin-top:-10px;">
-    <!-- Topbar Start -->
+     <!-- Topbar Start -->
     <div class="container-fluid px-5 d-none d-lg-block border border-bottom border-1 border-warning" style="background-color: white;">
         <div class="row ">
           <div class="col-lg-4 text-center text-lg-end d-flex justify-content-center align-items-center">
@@ -131,7 +131,6 @@ class NavbarComponent extends LitElement {
            
             <div class="col-lg-4 text-center text-lg-start mb-2 mb-lg-0 d-flex justify-content-center align-items-center">
                 <div class="d-flex justify-content-between align-items-center " >
-                 
                     <a class="btn btn-sm btn-outline-light btn-sm-square border border-1 border-dark rounded-circle mx-1" href="" style="background-color:#4267B2;"><i
                             class="fab fa-facebook-f fw-normal text-white"></i></a>
                     <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2  border border-1 border-dark mx-1" href="" style="background-color:#0077B5;"><i
@@ -145,7 +144,7 @@ class NavbarComponent extends LitElement {
         </div>
     </div>
     <!-- Topbar End -->
-    <div class="px-3 collapse navbar-collapse text-dark  d-flex justify-content-between align-items-center bg-white"
+    <div class="px-3 collapse navbar-expand-lg navbar-collapse text-dark  d-flex justify-content-between align-items-center bg-white"
         id="ftco-nav">
         <div class="navbar-nav d-flex align-items-center">
             <a href="" class="navbar-brand">
@@ -280,3 +279,4 @@ class NavbarComponent extends LitElement {
 }
 
 customElements.define('navbar-component', NavbarComponent);
+ 
