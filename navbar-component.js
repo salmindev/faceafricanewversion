@@ -139,6 +139,8 @@ class NavbarComponent extends LitElement {
                             class="fab fa-instagram fw-normal text-whit"></i></a>
                     <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle  border border-1 border-dark mx-1" href=""><i
                             class="fab fa-youtube fw-normal text-danger"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle  border border-1 border-dark mx-1"style="background:#25D366;" href=""><i
+                            class="fab fa-whatsapp fw-normal text-white"></i></a>
                 </div>
             </div>
         </div>
