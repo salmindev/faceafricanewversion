@@ -276,7 +276,7 @@ class NavbarComponent extends LitElement {
      <a href="about-us"  class="text-dark py-3 fs-2 fw-bold" >About Us</a>
      <div class="row  justify-content-between align-items-center">
      <a href="/tailor-made-tour" class="btn btn-primary rounded-pill py-2 px-2 col-6">Plan a trip</a>
-     <a href="https://api.whatsapp.com/send?phone=+255784162038" class="col-6 text-center"><button class="btn bg-success px-2 py-2 fs-5 text-white rounded-pill"><i class="bi bi-whatsapp pe-2 text-center"></i>Chat</button></a>
+     <a href="https://api.whatsapp.com/send?phone=+255784162038" class="col-6 text-center"><button class="btn bg-success px-3 py-2 fs-5 text-white rounded-pill"><i class="bi bi-whatsapp pe-2 text-center"></i>Chat</button></a>
      </div> 
      <div class="container mt-4 d-flex justify-content-between align-items-center">
      <div class="d-flex justify-content-between align-items-center " >
