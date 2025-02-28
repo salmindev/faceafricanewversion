@@ -9,6 +9,7 @@ class NavbarComponent extends LitElement {
     .nav-link:hover{
       background-color:#E8AB03;
     }
+    /* Default mobile behavior for smaller screens */
     @media (max-width: 991.98px) {
       .dropdown-menu {
         position: static;
@@ -22,6 +23,26 @@ class NavbarComponent extends LitElement {
         display: block;
       }
     }
+    /* Specific behavior for iPad Air, iPad Pro, Asus Zenbook Fold, Nest Hub */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .navbar-expand-lg .navbar-collapse {
+      display: none !important; /* Hide the desktop navigation */
+    }
+    .d-md-none {
+      display: block !important; /* Show the mobile navigation */
+    }
+    .hide-menu {
+      display: block !important; /* Ensure the mobile menu is visible */
+    }
+   
+  }
+
+  /* Hide the topbar on iPad Air, iPad Pro, Asus Zenbook Fold, Nest Hub */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .face-info {
+      display: none !important;
+    }
+  }
   `;
 
   constructor() {
@@ -110,7 +131,7 @@ class NavbarComponent extends LitElement {
 
     <div class="navbar navbar-expand-lg navbar-light  text-dark  d-none d-md-block" id="ftco-navbar" style="margin-top:-10px;">
      <!-- Topbar Start -->
-    <div class="container-fluid px-5 d-none d-lg-block border border-bottom border-1 border-warning" style="background-color: white;">
+    <div class="container-fluid px-5 d-none d-lg-block border border-bottom border-1 border-warning face-info" style="background-color: white;">
         <div class="row ">
           <div class="col-lg-4 text-center text-lg-end d-flex justify-content-center align-items-center">
             <div class="d-inline-flex align-items-center" style="height: 45px;">
@@ -197,17 +218,17 @@ class NavbarComponent extends LitElement {
        <div>
    
 </nav>
-<nav class="container-fluid hide-menu d-md-none  d-block  " style="background-color: #E8AB03; position:fixed; bottom:0px;width:100%;z-index:1000;">
-<div class="row">
-  <ul class="d-flex justify-content-between align-items-center w-100 py-3" style="list-style: none;">
-    <li class="text-dark d-flex align-items-center flex-column fw-bold"><a href="/" class="text-dark fs-6"><i class="fas fa-home d-block fa-2x text-center"></i>Home</a></li>
-    <li class="text-dark d-flex align-items-center flex-column fw-bold"><a href="african-safaris" class="text-dark fs-6"><i class='fas fa-hippo fa-2x d-block text-center text-dark'></i>Safari</a></li>
-    <li class="text-dark d-flex align-items-center flex-column fw-bold"><a href="climbing-kilimanjaro" class="text-dark fs-6"><i class="fas fa-mountain fa-2x d-block text-center"></i>Kilimanjaro</a></li>
-    <li class="text-dark d-flex align-items-center flex-column fw-bold"><a href="contact" class="text-dark fs-6"><i class="fas fa-phone-volume fa-2x d-block text-center"></i>Contact</a></li>
-    <li class="text-dark d-flex align-items-center flex-column fw-bold"><a data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-stream fa-2x d-block fw-bold text-center "></i>Menu</a></li>
-  </ul>
+<div class="container-fluid hide-menu d-md-none  d-block  justify-content-center align-items-center" style="background-color: #E8AB03; position:fixed; bottom:0px;z-index:1000;">
+
+  <div class="d-flex justify-content-between align-items-center py-3" style="list-style: none;">
+    <div class="text-dark d-flex align-items-center flex-column fw-bold"><a href="/" class="text-dark fs-6"><i class="fas fa-home d-block fa-2x text-center"></i>Home</a></div>
+    <div class="text-dark d-flex align-items-center flex-column fw-bold"><a href="african-safaris" class="text-dark fs-6"><i class='fas fa-hippo fa-2x d-block text-center text-dark'></i>Safari</a></div>
+    <div class="text-dark d-flex align-items-center flex-column fw-bold"><a href="climbing-kilimanjaro" class="text-dark fs-6"><i class="fas fa-mountain fa-2x d-block text-center"></i>Kilimanjaro</a></div>
+    <div class="text-dark d-flex align-items-center flex-column fw-bold"><a href="contact" class="text-dark fs-6"><i class="fas fa-phone-volume fa-2x d-block text-center"></i>Contact</a></div>
+    <div class="text-dark d-flex align-items-center flex-column fw-bold"><a data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-stream fa-2x d-block fw-bold text-center "></i>Menu</a></div>
   </div>
-   <div class="offcanvas offcanvas-end  pb-5" style="width:80%;" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+ 
+   <div class="offcanvas offcanvas-end  pb-5" style="width:80%; overflow-y: auto;" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
     <div class="offcanvas-header">
       <div class="logo pt-3" style="width: 120px; height: 70px; background-image: url('images/logo.avif');background-position: center;background-repeat: no-repeat;background-size: cover;"></div>
       <button type="button" class="btn-close fs-2" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -273,8 +294,8 @@ class NavbarComponent extends LitElement {
     </div>
 
   </div>
+
 </div>
-</nav>
 
     `;
   }
