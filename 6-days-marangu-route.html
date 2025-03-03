@@ -24,6 +24,52 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        .itinerary {
+            border-left: 2px solid #f0c14b;
+            padding-left: 20px;
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .itinerary-step {
+            position: absolute;
+            left: -16px;
+            top: 0;
+            background-color: #fff;
+            border: 2px solid #f0c14b;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .itinerary h4 {
+            margin-top: 0;
+        }
+
+        .itinerary img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .itinerary-icon {
+            font-size: 1.5rem;
+            color: #f0c14b;
+            margin-right: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .row>.col-12 {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -57,182 +103,205 @@
     <!-- Header End -->
 
     <!-- Contact Start -->
-    <div class="container-fluid contact bg-light py-5 px-4">
-       
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-12">
-                    <center>
-                        <h5 class="section-title px-3 text-center">Overview</h5>
-                    </center>
-                    <h3 class="mb-4 text-center">6 Days Marangu Route</h3>
-                    <p class="text-center">
-                        <strong>Marangu Route</strong> also known as the &quot;<strong>Coca-Cola Route</strong>&quot; is
-                        an extraordinary trek on Mount Kilimanjaro. It is the most settled route. Many help the Marangu
-                        route since it is seen as the most straightforward path on the mountain, given its dynamic
-                        inclination. It is in like manner the fundamental route which offers napping cottages in
-                        habitation style lodging. The base days required for this route is five, in spite of the way
-                        that the probability of successfully accomplishing the top in that timeframe is extremely low.
-                        Spending an extra acclimatization day on the mountain is much recommended when <strong>Mount
-                            Kilimanjaro Climbing</strong> by using the Marangu route. The route has the least beautiful
-                        grouping of the impressive number of routes because the rising and fall are done on a comparable
-                        way and it is the most pressed route along these lines. Marangu is bolstered just in the midst
-                        of the stormy season, where the cottage accommodations are supported over wet ground.
-                    </p>
-                    <div class="row my-5">
+    <div class="container-fluid contact  py-5 px-4">
 
-                        <!--  <div class="map d-flex align-items-center justify-content-center">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-12">
+                <center>
+                    <h5 class="section-title px-3 text-center">Overview</h5>
+                </center>
+                <h3 class="mb-4 text-center">6 Days Marangu Route</h3>
+                <p class="text-center">
+                    <strong>Marangu Route</strong> also known as the &quot;<strong>Coca-Cola Route</strong>&quot; is
+                    an extraordinary trek on Mount Kilimanjaro. It is the most settled route. Many help the Marangu
+                    route since it is seen as the most straightforward path on the mountain, given its dynamic
+                    inclination. It is in like manner the fundamental route which offers napping cottages in
+                    habitation style lodging. The base days required for this route is five, in spite of the way
+                    that the probability of successfully accomplishing the top in that timeframe is extremely low.
+                    Spending an extra acclimatization day on the mountain is much recommended when <strong>Mount
+                        Kilimanjaro Climbing</strong> by using the Marangu route. The route has the least beautiful
+                    grouping of the impressive number of routes because the rising and fall are done on a comparable
+                    way and it is the most pressed route along these lines. Marangu is bolstered just in the midst
+                    of the stormy season, where the cottage accommodations are supported over wet ground.
+                </p>
+                <div class="row my-5 justify-content-center align-items-center">
+
+                    <!--  <div class="map d-flex align-items-center justify-content-center">
                             <img src="images/trekking/marangu-inner.jpg" class="img-responsive" alt="Lemosho Route"
                                 title="Lemosho Route">
                         </div> -->
-                        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="images/trekking/marangu-img.jpg" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/trekking/marangu-img1.jpg" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/trekking/marangu-img2.jpg" class="d-block w-100" alt="...">
-                                </div>
+                    <div id="carouselExampleAutoplaying" class="carousel slide col-md-8 col-sm-6"
+                        data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/trekking/marangu-img.jpg" class="d-block w-100" alt="...">
                             </div>
-                            <button class="carousel-control-prev" type="button"
-                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button"
-                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
+                            <div class="carousel-item">
+                                <img src="images/trekking/marangu-img1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/trekking/marangu-img2.jpg" class="d-block w-100" alt="...">
+                            </div>
                         </div>
-
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
+
                 </div>
             </div>
+        </div>
 
-            <div class="row  d-flex justify-content-center align-items-center my-5">
-
-                <div class="col-md-12 col-sm-6">
-                    <h3 class="mb-4 bg-warning w-100 py-3 ps-3"><span>Day 1:</span>
-                    </h3>
-                    <p class="d-block text-center px-2">You would be picked up and transferred by your guide to Moshi town
-                        from
-                        the Kilimanjaro International Airport. You would have your accommodation at a base hotel
-                        in Moshi: known as the gateway to Mount Kilimanjaro.</p>
-                </div>
-                <h4 class="my-3 text-center"><strong class="fs-5" style="color: #E8AB03;">Meal
-                        plan</strong>: Breakfast,
-                    Lunch & Dinner</h4>
-            </div>
-
-            <div class="row g-5 align-items-center my-5">
-                <div class="col-lg-12">
-                    <div class="row g-3 d-flex justify-content-center align-items-center">
-                        <div class="col-md-12 col-sm-6">
-                            <h3 class="mb-4 bg-warning w-100 py-3 ps-3">Day 2:
-                            </h3>
-                            <p class="d-block text-center px-2">After your breakfast , your guide would give you a short
-                                briefing on the
-                                day’s tour and then you would take a drive of 45 minutes to the Marangu Gate where you
-                                would have to registered your entry with the park authority and officially start with a
-                                four-hour walk to the Mandara encampment. We will pass through a thick rainforest will
-                                officially commence with a four-hour walk to the Mandara encampment. We will pass
-                                through a thick rainforest zone, where there is a high chance of rain in the afternoon.
-                                We will spend the night at Mandara Hut (2,750m), an attractive collection of buildings.
-                                Bathrooms are available with running water.</p>
-                        </div>
-
-                    </div>
+        <div class="container   p-3" id="itinerary">
+            <!-- Content for Itinerary -->
+            <!-- Itinerary Step 1 -->
+            <h3 class="text-center">Detail Itinerary</h3>
+            <div class="itinerary mt-3">
+                <div class="itinerary-step">1</div>
+                <h4>Arrival in Arusha</h4>
+                <p>
+                    Upon arrival at the airport (Kilimanjaro or Arusha) you will be met by Nasikia Safaris’
+                    representative and drive you to your accommodation in Arusha for overnight stay waiting for
+                    your adventures to start on the following day.
+                </p>
+                <div class="d-md-flex d-sm-block align-items-center mb-3">
+                    <p class="px-2"><i class="bi bi-geo-fill fs-3 text-primary"></i>
+                        <span>Arusha</span>
+                    </p>
+                    <p class="px-2"><i class="bi bi-house-fill fs-3 text-primary"></i>
+                        <span>Mount Meru Hotel</span>
+                    </p>
+                    <p class="px-2"><i class="fa fa-cutlery fs-3 text-primary"></i>
+                        <span>Bed & Break</span>
+                    </p>
                 </div>
             </div>
-            <div class="row g-5 align-items-center my-5">
-                <div class="col-lg-12">
-                    <div class="row g-3 d-flex justify-content-center align-items-center">
+            <!-- Itinerary Step 2 -->
+            <div class="itinerary">
+                <div class="itinerary-step">2</div>
+                <h4>Arusha to Tarangire National Park</h4>
+                <p>
+                    Early morning after breakfast at around 8:00am, you will have a short briefing before you
+                    depart to Tarangire National Park. The park with its endless tree savannah including the
+                    impressive baobab trees and seasonal marshes is also home to the largest population of
+                    elephants in northern Tanzania. You are also likely to spot giraffes, buffaloes, lions,
+                    zebras, gnus and other types of antelopes and gazelles. Your guide will open the roof of the
+                    vehicle for excellent wildlife viewing. Hot Lunch will be served at around 12:30pm at the
+                    picnic site and after that you will continue to explore this incredible park.
 
-                        <div class="col-md-12 col-sm-6">
-                            <h3 class="mb-4 bg-warning w-100 py-3 ps-3">
-                                Day 3:
-                            </h3>
-                            <p class="d-block text-center px-2">Today we will continue our ascent through the forest for a
-                                short time,
-                                before reaching the heather and moorland zone at roughly 3,000m (approximately a
-                                six-hour walk). Enjoy stunning views of the mountain peaks at this altitude. We will
-                                spend the night at Horombo Hut (3,720m), which lies in a valley surrounded by giant
-                                lobelia and groundsel, flora which are characteristic of this semi-alpine zone.
-                                Bathrooms are available with running water.</p>
-                        </div>
-                    </div>
+                    In the evening after exploration, you will drive straight to your accommodation for dinner
+                    and overnight stay.
+                </p>
+
+                <div class="d-md-flex d-sm-block align-items-center mb-3">
+                    <p class="px-2"><i class="bi bi-geo-fill fs-3 text-primary"></i>
+                        <span>Tarangare</span>
+                    </p>
+                    <p class="px-2"><i class="bi bi-house-fill fs-3 text-primary"></i>
+                        <span>Maramboi Tented Lodge</span>
+                    </p>
+                    <p class="px-2"><i class="fa fa-cutlery fs-3 text-primary"></i>
+                        <span>All-inclusive meals (B, L & D) + drinks</span>
+                    </p>
                 </div>
-
+              
             </div>
-            <div class="row g-5 align-items-center my-5">
-                <div class="col-lg-12">
-                    <div class="row g-3 d-flex justify-content-center align-items-center">
-                        <div class="col-md-12 col-sm-6">
-                            <h3 class="mb-4 bg-warning w-100 py-3 ps-3">Day 4:
-                            </h3>
-                            <p class="d-block text-center px-2">Our trek continues past the final watering point, and ascends
-                                onto the
-                                sale of Kilimanjaro, between the peaks of Kibo and Mawenzi. The vegetation thins out as
-                                we enter the desert-line alpine zone (approximately 4,000m) and, once we cross the
-                                saddle, Kibo peak comes into view. The saddle is an alpine desert that resembles a lunar
-                                landscape. Be careful to notice signs of altitude sickness. This seven-hour walk will be
-                                taken at a slow pace. We will landscape. Be careful to notice signs of altitude
-                                sickness. This seven-hour walk will be taken at a slow pace. We will spend the night at
-                                Kibo Hut (4,703m), a comfortable stone construction (no running water at Kibo Hut). This
-                                semi-desert zone receives an annual rainfall of under 250mm; the ground often freezes at
-                                night, but ground temperatures soar to above 30 degrees Celsius by day. Few plants other
-                                than lichens and grasses survive in these conditions.</p>
-                        </div>
-                    </div>
+            <!-- Itinerary Step 3 -->
+            <div class="itinerary">
+                <div class="itinerary-step">3</div>
+                <h4>Ngorongoro crater to central Serengeti National Park</h4>
+                <p>
+                    Early morning after breakfast at around 8:00am, you will drive straight to Ngorongoro
+                    Conservation Area and stop at a viewing pointhas a built pavilion that provides a near 180°
+                    view of the Ngorongoro crater. After that you will descend down to the crater which is 600m
+                    deep. The Ngorongoro Crater is a breathtakingly beautiful setting and the best place in East
+                    Africa to see the Big Five. It is one of the most beautiful natural wildlife safari sites in
+                    the world and an exceptional place to interact with people from the Maasai tribe.On reaching
+                    the crater’s edge, the 20 km diameter caldera opens up before you in all its stunning glory
+                    and you will descend into the crater on an adventurous trail. This World Heritage Site is
+                    seasonally home to over 25,000 animals in including a wide range of birds’ species, hyenas
+                    and the endangered black rhino. Hot Lunch will be served at a picnic spot at the hippo pool
+                    and after that you will drive straight to the heart of Serengeti National Park. You will
+                    have an en-route drive to your accommodation for dinner and overnight stay.
+                </p>
+                <div class="d-md-flex d-sm-block align-items-center mb-3">
+                    <p class="px-2"><i class="bi bi-geo-fill fs-3 text-primary"></i>
+                        <span>Ngorongoro crater & Serengeti National Park</span>
+                    </p>
+                    <p class="px-2"><i class="bi bi-house-fill fs-3 text-primary"></i>
+                        <span>Kubu Kubu Tented Lodge</span>
+                    </p>
+                    <p class="px-2"><i class="fa fa-cutlery fs-3 text-primary"></i>
+                        <span>All-inclusive meals (B, L & D) + drinks</span>
+                    </p>
                 </div>
-
+               
             </div>
-            <div class="row g-5 align-items-center my-5">
-                <div class="col-lg-12">
-                    <div class="row g-3 d-flex justify-content-center align-items-center">
+            <!-- Itinerary Step 4 -->
+            <div class="itinerary">
+                <div class="itinerary-step">4</div>
+                <h4>Serengeti National Park to Karatu</h4>
+                <p>
+                    Early morning after breakfast at around 8:00am or according to your preference, you will
+                    continue exploring the endless plains of the Serengeti National Park for a half day game
+                    drive. The Serengeti National Park is home to the largest concentration of wildlife than
+                    anywhere else on the planet.
 
-                        <div class="col-md-12 col-sm-6">
-                            <h3 class="mb-4 bg-warning w-100 py-3 ps-3">Day 5:
-                            </h3>
-                            <p class="d-block text-center px-2">Shortly after midnight, we will commence our climb to the
-                                summit of
-                                Kilimanjaro, since it is easier to climb the scree slope to
-                                Gillman’s Point (5,861m) on the crater rim when it is frozen and an early start for the
-                                six-hour hike improves our chances of reaching
-                                the summit in time for sunrise. From Gilman’s Point, it is a further two-hour round trip
-                                long the crater’s edge to Uhuru Peak,
-                                the highest point in Africa. From the summit we would start descending all the way to
-                                Horombo Hut where we will be spending our last
-                                night on the mountain.</p>
-                        </div>
+                    The park offers a multitude of wildlife including the Big Five – lion, elephant, buffalo,
+                    rhino and leopard. Hot lunch will be served inside the park at around 12:30pm with some soft
+                    drinks and unlimited drinking water.
 
-                    </div>
+                    You will have a final game drive until in the afternoon at around 3pm where you will drive
+                    straight to the gate and head for your accommodation in Karatu passing through Ngorongoro
+                    conservation area for dinner and overnight stay.
+                </p>
+                <div class="d-md-flex d-sm-block align-items-center mb-3">
+                    <p class="px-2"><i class="bi bi-geo-fill fs-3 text-primary"></i>
+                        <span>Serengeti</span>
+                    </p>
+                    <p class="px-2"><i class="bi bi-house-fill fs-3 text-primary"></i>
+                        <span>Kitela Lodge</span>
+                    </p>
+                    <p class="px-2"><i class="fa fa-cutlery fs-3 text-primary"></i>
+                        <span>All-inclusive meals (B, L & D) + drinks</span>
+                    </p>
                 </div>
-
-            </div>
-            <div class="row g-5 align-items-center my-5">
-                <div class="col-lg-12">
-                    <div class="row g-3 d-flex justify-content-center align-items-center">
-
-                        <div class="col-md-12 col-sm-6">
-                            <h3 class="mb-4 bg-warning w-100 py-3 ps-3">Day 6:
-                            </h3>
-                            <p class="d-block text-center">Today’s descent continues past the Mandara encampment to the
-                                bottom of
-                                the mountain, where each hiker will receive a well-earned certificate. From here, you
-                                will be transferred t a Base Hotel in Moshi / Arusha for dinner and overnight.</p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="row g-5 align-items-center my-5">
                 
-                    
-                        <div class="col-md-8 col-6">
+            </div>
+            <!-- Itinerary Step 5 -->
+            <div class="itinerary">
+                <div class="itinerary-step">5</div>
+                <h4>Lake Manyara National Park to Arusha</h4>
+                <p>
+                    Early morning after breakfast at, you will drive straight to Lake Manyara National Park
+                    which is also known as the home of Tree Climbing Lions and birds’ paradise. More than 500
+                    species are present in Lake Manyara, and even for a first-time visitor to Africa might
+                    reasonably expect to observe 100 of these species in a single day. Inland of the floodplain,
+                    a narrow belt of acacia woodland is the favored haunt of Manyara’s legendary tree-climbing
+                    lions and impressively tusked elephants. Other animals that can be found here are giraffes,
+                    Zebras, hyenas, Buffalo, Hippo, elephants and wildebeests. Lunch will be served inside the
+                    park and after further exploration of the park you will return to Arusha. Those who wish to
+                    combine this safari with a trip to Zanzibar can take a flight from the local Arusha Airport
+                    or Kilimanjaro International Airport.
+                </p>
+                <div class="d-md-flex d-sm-block align-items-center mb-3">
+                    <p class="px-2"><i class="fa fa-cutlery fs-3 text-primary"></i>
+                        <span>Breakfast & Lunch</span>
+                    </p>
+                </div>
+               
+            </div>
+            <div class="row g-5 align-items-center my-5 bg-light">
+                <div class="col-lg-12">
+                    <div class="row g-3">
+                        <div class="col-md-6 col-sm-6">
                             <ul class="nav nav-tabs" role="tablist">
                                 <li class="nav-item">
                                     <a class="nav-link active" data-bs-toggle="tab" href="#home">INCLUDE</a>
@@ -240,76 +309,67 @@
                                 <li class="nav-item">
                                     <a class="nav-link" data-bs-toggle="tab" href="#menu1">EXCLUDE</a>
                                 </li>
+                                
                             </ul>
                             <!-- Tab panes -->
                             <div class="tab-content">
                                 <div id="home" class=" tab-pane active">
-
+                                    
                                     <ul class="pt-4" style="list-style: none; line-height: 40px;">
-                                        <li><i class="fa fa-check-circle text-warning"></i> Airport pick up and drop
-                                            off.</li>
-                                        <li><i class="fa fa-check-circle text-warning"></i> 2 Nights Accommodation in
-                                            Arusha on bed and breakfast bases.</li>
-                                        <li><i class="fa fa-check-circle text-warning"></i> Professional, experienced
-                                            guides.
+                                        <li><i class="fa fa-check-circle text-warning"></i> Transport in modified 4WD Land Cruiser or
+                                            Land Rover with photographic roof.</li>
+                                        <li><i class="fa fa-check-circle text-warning"></i> All airport pick up and drop off.</li>
+                                        <li><i class="fa fa-check-circle text-warning"></i> Accommodation and meals in Hotels/
+                                            Lodges/ Tented Camps as per itinerary.
                                         </li>
-                                        <li><i class="fa fa-check-circle text-warning"></i>
-                                            Fresh, healthy, nutritious food.
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-check-circle text-warning"></i>
-                                            Clean, purified drinking water.
+                                        <li><i class="fa fa-check-circle text-warning"></i> 
+                                            Game drives in 4×4 safari vehicle with pop roof ideal for photographing.
                                         </li>
                                         <li>
                                             <i class="fa fa-check-circle text-warning"></i>
-                                            Hard working, team-oriented support staff.
+                                            Services of professional English speaking safari guide. 
                                         </li>
                                         <li>
                                             <i class="fa fa-check-circle text-warning"></i>
-                                            Fair wages to our employees.
+                                            All park fees and crater service fees and camping fees.  
                                         </li>
                                         <li>
                                             <i class="fa fa-check-circle text-warning"></i>
-                                            Quality, waterproof, four-season mountain hardware tents.
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-check-circle text-warning"></i>
-                                            Solid safety and crisis management procedures.
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-check-circle text-warning"></i>
-                                            Transfer to/from the Mountain.
+                                            5 litre of bottled mineral water per person per day.
                                         </li>
                                     </ul>
                                 </div>
                                 <div id="menu1" class=" tab-pane">
-
+                                    
                                     <ul class="pt-4" style="list-style: none; line-height: 40px;">
-                                        <li><i class="fa fa-times-circle iti-icon text-danger"></i> Flight tickets.</li>
-                                        <li><i class="fa fa-times-circle iti-icon text-danger"></i> Visa fees.</li>
-                                        <li><i class="fa fa-times-circle iti-icon text-danger"></i> Items of personal
-                                            nature.
+                                        <li><i class="fa fa-times-circle iti-icon text-danger"></i> Visa fees and travel insurance.</li>
+                                        <li><i class="fa fa-times-circle iti-icon text-danger"></i> International and domestic flights.</li>
+                                        <li><i class="fa fa-times-circle iti-icon text-danger"></i> Olduvai gorge fees.
                                         </li>
-                                        <li><i class="fa fa-times-circle iti-icon text-danger"></i>
-                                            Climbing gears eg, Walking poles etc.
+                                        <li><i class="fa fa-times-circle iti-icon text-danger"></i> 
+                                            Tipping and gratuities.
                                         </li>
                                         <li>
                                             <i class="fa fa-times-circle iti-icon text-danger"></i>
-                                            Tips to Mountain crew.
+                                            All items of a personal nature i.e. telephones, mosquito repellents etc.
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-times-circle iti-icon text-danger"></i>
+                                            Alcoholic and non-alcoholic drinks and beverages.  
                                         </li>
                                     </ul>
                                 </div>
+                                
                             </div>
                         </div>
-                        <div class="col-md-12 col-6">
+                        <div class="col-md-6 col-sm-6">
                             <h3 class="mb-4 text-center">Book This Tour</h3>
-
+    
                             <form>
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control border-0" id="name"
-                                                placeholder="Your Name">
+                                            <input type="text" class="form-control border-0" id="name" placeholder="Your Name">
                                             <label for="name">Your Name</label>
                                         </div>
                                     </div>
@@ -322,36 +382,31 @@
                                     </div>
                                     <div class="col-6">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control border-0" id="subject"
-                                                placeholder="Subject">
+                                            <input type="text" class="form-control border-0" id="subject" placeholder="Subject">
                                             <label for="subject">Country</label>
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control border-0" id="subject"
-                                                placeholder="Subject">
+                                            <input type="text" class="form-control border-0" id="subject" placeholder="Subject">
                                             <label for="subject">Phone number</label>
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <div class="form-floating">
-                                            <input type="number" class="form-control border-0" id="subject"
-                                                placeholder="Subject">
+                                            <input type="number" class="form-control border-0" id="subject" placeholder="Subject">
                                             <label for="subject">No. Adult</label>
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <div class="form-floating">
-                                            <input type="number" class="form-control border-0" id="subject"
-                                                placeholder="Subject">
+                                            <input type="number" class="form-control border-0" id="subject" placeholder="Subject">
                                             <label for="subject">No. Children</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <input type="date" class="form-control border-0" id="subject"
-                                                placeholder="Subject">
+                                            <input type="date" class="form-control border-0" id="subject" placeholder="Subject">
                                             <label for="subject">Arrival Date</label>
                                         </div>
                                     </div>
@@ -365,36 +420,37 @@
                                     <div class="col-12">
                                         <div class="form-check form-check-inline">
                                             <label class="form-check-label" for="option1">I prefer:</label>
-                                        </div>
+                                          </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="options" id="option1"
-                                                value="option1">
+                                            <input class="form-check-input" type="radio" name="options" id="option1" value="option1">
                                             <label class="form-check-label" for="option1">Email</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="options" id="option2"
-                                                value="option2">
+                                          </div>
+                                          <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="options" id="option2" value="option2">
                                             <label class="form-check-label" for="option2">Whatsapp</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="options" id="option3"
-                                                value="option3">
+                                          </div>
+                                          <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="options" id="option3" value="option3">
                                             <label class="form-check-label" for="option3">Call</label>
-                                        </div>
+                                          </div>
                                     </div>
                                     <div class="col-12">
-                                        <p>By clicking 'Button', you agree to our <a href=""
-                                                style="color: #E8AB03;">Privacy Policy</a>.</p>
+                                        <p>By clicking 'Button', you agree to our <a href="" style="color: #E8AB03;">Privacy Policy</a>.</p>
                                     </div>
-                                    <div class="col-12">
+                                    <div class="col-12 mb-3">
                                         <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
                                     </div>
                                 </div>
                             </form>
-
+    
                         </div>
-               
+                    </div>
+    
+                </div>
+    
             </div>
+        </div>
+       
     </div>
 
     <!-- Contact End -->
