@@ -194,6 +194,136 @@ class FooterComponent extends LitElement {
 }
  
 }
+.fas-reviews {
+  width: 100%;
+  float: left;
+  position: relative;
+  background-image: url(../images/bg10.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: inherit;
+}
+
+.fas-reviews-main {
+  width: 100%;
+  float: left;
+  position: relative;
+  z-index: 0;
+  padding: 60px 0px 40px 0px;
+}
+
+.fas-reviews-div {
+  width: 100%;
+  float: left;
+  position: relative;
+  margin-top: 30px;
+}
+
+.fas-reviews-sec {
+  width: 100%;
+  float: left;
+  position: relative;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.fas-reviews-sec-heading {
+  width: 100%;
+  float: left;
+  position: relative;
+  text-align: center;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.25);
+  padding: 0 0 30px 0;
+}
+
+.fas-reviews-sec-heading-1 {
+  width: 20%;
+  float: left;
+}
+
+.fas-reviews-sec-heading-1 img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.fas-reviews-sec-heading-2 {
+  width: 50%;
+  float: left;
+}
+
+.fas-reviews-sec-heading-2 h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: rgba(51, 51, 51, 0.61);
+  font-family: 'Rajdhani', sans-serif;
+  margin-top: 10px;
+}
+
+.fas-reviews-sec-heading-3 {
+  width: 100%;
+  float: left;
+  margin-top: 10px;
+}
+
+.fas-reviews-sec-heading-3 ul {
+  list-style: none;
+}
+
+.fas-reviews-sec-heading-3 ul li {
+  display: inline-block;
+}
+
+.fas-reviews-sec-heading-3 ul li i {
+  color: #fd9d14;
+}
+
+.fas-reviews-sec-content {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+
+.fas-reviews-sec-content p {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: rgba(51, 51, 51, 0.62);
+
+  margin-top: 30px;
+}
+
+.fas-reviews-slider .owl-dots {
+  display: block !important;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.fas-selling-tour-logo {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+
+.fas-selling-tour-logo-image {
+  width: 100%;
+  float: left;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-content: center;
+}
+
+.fas-selling-tour-logo-image a {
+  display: grid;
+  width: 100%;
+  place-content: center;
+}
+
+.fas-selling-tour-logo-image img {
+  width: auto;
+  padding: 0px 10px;
+}
   `;
 
   constructor() {
@@ -247,6 +377,7 @@ class FooterComponent extends LitElement {
     dropdown.classList.toggle('show');
   }
   
+  
 
   render() {
     return html`
@@ -269,7 +400,12 @@ class FooterComponent extends LitElement {
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-  
+    
+
+
+ 
+    
+
     <!-- Tour Booking Start -->
     <div class="container-fluid booking py-5">
         <div class="container py-5">
@@ -490,7 +626,38 @@ class FooterComponent extends LitElement {
     </div>
 
     <!-- Copyright End -->
-    
+    <script>
+      
+You said:
+var fasreviewsslider = $('.fas-reviews-slider').owlCarousel({
+    items: 4,
+    loop: true,
+    dots: true,
+    autoplayHoverPause: false,
+    autoplay: true,
+    margin: 20,
+    singleItem: true,
+    smartSpeed: 1000,
+    autoplayTimeout: 3000,
+    responsive: {
+        0: {
+            loop: true,
+            items: 1
+        },
+        600: {
+            loop: true,
+            items: 2
+        },
+        900: {
+            loop: true,
+            items: 3
+        },
+        1000: {
+            items: 3
+        }
+    }
+}); 
+    </script>
     `;
   }
 }
