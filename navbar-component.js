@@ -50,7 +50,7 @@ class NavbarComponent extends LitElement {
     // Add the favicon to the document head
     const faviconLink = document.createElement('link');
     faviconLink.rel = 'icon';
-    faviconLink.href = 'favicon/favicon.ico'; // Replace with the actual path to your favicon
+    faviconLink.href = 'images/favicon-32x32.png'; // Replace with the actual path to your favicon
     document.head.appendChild(faviconLink);
 
     // Add Google Analytics script
